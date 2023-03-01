@@ -37,15 +37,20 @@ public class DialogManager : MonoBehaviour {
         audioSource = GetComponent<AudioSource>();
     }
 
+    // Play dialog: DialogManager.Instance.SendMessage("StartDialog", "dialog_key");
     public void StartDialog(string dialogKey) {
-        var selectedDialog = _dialogCollection.dialogLines.First(dialog => dialog.key == dialogKey);
+        if(!audioSource.isPlaying){
+            var selectedDialog = _dialogCollection.dialogLines.First(dialog => dialog.key == dialogKey);
+            PlayAudio(selectedDialog.audioPath);
+            StartCoroutine(DisplaySubtitles(selectedDialog.subtitles));
+        }
+    }
 
-        // Play audio
-        var audioPath = "Sounds/" + selectedDialog.audioPath;
+
+    private void PlayAudio(string audioName) {
+        var audioPath = "Sounds/" + audioName;
         var audioClip = Resources.Load<AudioClip>(audioPath);
         audioSource.PlayOneShot(audioClip);
-
-        StartCoroutine(DisplaySubtitles(selectedDialog.subtitles));
     }
 
      private IEnumerator DisplaySubtitles(List<Subtitle> subtitles) {
@@ -55,5 +60,6 @@ public class DialogManager : MonoBehaviour {
         }
         subsTextBox.text = "";
     }
+
 }
 

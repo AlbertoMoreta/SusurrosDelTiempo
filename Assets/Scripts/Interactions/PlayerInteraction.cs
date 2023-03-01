@@ -13,6 +13,8 @@ public class PlayerInteraction : MonoBehaviour {
     private Sprite activeCrosshair;
     private Sprite defaultCrosshair;
 
+    private bool _mouseMode = false;
+
     // Start is called before the first frame update
     void Start() {
         activeCrosshair = Resources.Load<Sprite>("Sprites/crosshair_active");
@@ -21,20 +23,25 @@ public class PlayerInteraction : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (Physics.Raycast(playerCamera.position, playerCamera.forward, out RaycastHit hit, distance, interactableLayers)) {
-            currentInteractable = hit.collider.GetComponent<Interactable>();
-            crosshair.sprite = activeCrosshair; 
-        } else {
-            currentInteractable = null;
-            crosshair.sprite = defaultCrosshair;
-        }
+        if(!_mouseMode){
+            if (Physics.Raycast(playerCamera.position, playerCamera.forward, out RaycastHit hit, distance, interactableLayers)) {
+                currentInteractable = hit.collider.GetComponent<Interactable>();
+                crosshair.sprite = activeCrosshair; 
+            } else {
+                currentInteractable = null;
+                crosshair.sprite = defaultCrosshair;
+            }
 
-        if (Input.GetMouseButtonDown(0)) {
-            if (currentInteractable != null) {
-                Debug.Log("CurrentInteractable = " + currentInteractable);
-                currentInteractable.Interact();
+            if (Input.GetMouseButtonDown(0)) {
+                if (currentInteractable != null) {
+                    Debug.Log("CurrentInteractable = " + currentInteractable);
+                    currentInteractable.Interact();
+                }
             }
         }
+    }
 
+    public void SetMouseModeActive(bool active) {
+        _mouseMode = active;
     }
 }
