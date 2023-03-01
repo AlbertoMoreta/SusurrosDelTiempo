@@ -14,7 +14,7 @@ public class Clock : MonoBehaviour, Interactable {
     }
 
     public void Interact() {
-        
+        DialogManager.Instance.SendMessage("StartDialog", "1_test");
     }
 
 }

@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour {
     public Transform groundCheck;
     public LayerMask groundMask;
     public float speed = 12f;
-    public DialogManager dm;
 
     private CharacterController controller;
     private Vector3 velocity;
@@ -20,7 +19,6 @@ public class PlayerMovement : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         controller = GetComponent<CharacterController>();
-        dm.SendMessage("StartDialog", "1_welcome");
     }
 
     // Update is called once per frame

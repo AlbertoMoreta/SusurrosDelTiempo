@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +8,20 @@ public class DialogManager : MonoBehaviour {
 
     public TextMeshProUGUI subsTextBox;
 
-    private DialogList _dialogs;
+    private DialogCollection _dialogCollection;
+    private AudioSource audioSource;
+
+    public static DialogManager Instance {
+        get; private set;
+    }
+
+    private void Awake() {
+        if (Instance != null && Instance != this) {
+            Destroy(this);
+            return;
+        }
+        Instance = this;
+    }
 
     // Start is called before the first frame update
     void Start() {
@@ -17,17 +29,21 @@ public class DialogManager : MonoBehaviour {
         var dialogsFile = Resources.Load("dialogs") as TextAsset;
         Debug.Log("dialogsFile: " + dialogsFile);
         if (dialogsFile != null) {
-            _dialogs = JsonUtility.FromJson<DialogList>(dialogsFile.text);
-            Debug.Log("Dialogs: " + _dialogs.dialogLines.ToString());
+            _dialogCollection = JsonUtility.FromJson<DialogCollection>(dialogsFile.text);
         } else {
             Debug.LogWarning(dialogsFile + " file does not exists.");
         }
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void StartDialog(string dialogKey) {
-        var selectedDialog = _dialogs.dialogLines.First(dialog => dialog.key == dialogKey);
+        var selectedDialog = _dialogCollection.dialogLines.First(dialog => dialog.key == dialogKey);
 
-        //ToDo: PlayAudio
+        // Play audio
+        var audioPath = "Sounds/" + selectedDialog.audioPath;
+        var audioClip = Resources.Load<AudioClip>(audioPath);
+        audioSource.PlayOneShot(audioClip);
 
         StartCoroutine(DisplaySubtitles(selectedDialog.subtitles));
     }
@@ -41,20 +57,3 @@ public class DialogManager : MonoBehaviour {
     }
 }
 
-[Serializable]
-public class DialogList {
-    public List<Dialog> dialogLines = new List<Dialog>();
-}
-
-[Serializable]
-public class Dialog {
-    public string key;
-    public string audioPath;
-    public List<Subtitle> subtitles;
-}
-
-[Serializable]
-public class Subtitle  {
-    public string text;
-    public float duration;
-}

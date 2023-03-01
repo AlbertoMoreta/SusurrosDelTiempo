@@ -1,6 +1,16 @@
 {
    "dialogLines":[
       {
+         "key":"1_test",
+         "audioPath": "test_audio_clip",
+         "subtitles":[
+            {
+               "text":"Prueba de clip de audio",
+               "duration":3
+            }
+         ]
+      },
+      {
          "key":"1_welcome",
          "audioPath":"todo",
          "subtitles":[
