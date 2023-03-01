@@ -1,0 +1,32 @@
+{
+   "dialogLines":[
+      {
+         "key":"1_welcome",
+         "audioPath":"todo",
+         "subtitles":[
+            {
+               "text":"Welcome Text 1",
+               "duration":3
+            },
+            {
+               "text":"Welcome Text 2",
+               "duration":3
+            },
+            {
+               "text":"Welcome Text 3",
+               "duration":3
+            }
+         ]
+      },
+      {
+         "key":"2_plaza",
+         "audioPath":"todo",
+         "subtitles":[
+            {
+               "text":"Lorem Ipsum",
+               "duration":3
+            }
+         ]
+      }
+   ]
+}
