@@ -18,7 +18,7 @@ public class DialogTrigger : MonoBehaviour {
     }
 
     private void OnTriggerEnter(Collider other) {
-        if(other.tag == "Player" && dialogKey != null) {
+        if(other.tag.Equals("Player") && dialogKey != null) {
             DialogManager.Instance.StartDialog(dialogKey);
         }
     }
