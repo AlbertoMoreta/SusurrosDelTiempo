@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class MouseTrack : MonoBehaviour {
 
-    public float mouseSensitivity = 100f;
+    //Sensitivity
+    public float mouseSensitivity = 1000f;
     public Transform player;
 
     private float xRotation = 0f;
