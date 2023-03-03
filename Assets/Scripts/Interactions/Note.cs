@@ -1,11 +1,17 @@
 
 using UnityEngine;
-
+using System.Collections;
+using System.Collections.Generic;
 
 public enum NoteDirection {
     NONE = -1,
     TO_BACKGROUND = 0,
     TO_FOREGROUND = 1
+}
+
+public enum NoteFlip{
+    FRONT = 0,
+    BACK = 1
 }
 
 public class Note : MonoBehaviour, Interactable {
@@ -18,6 +24,8 @@ public class Note : MonoBehaviour, Interactable {
     private Vector3 _startingPosition;
     private Quaternion _startingRotation;
     private Vector3 _startingScale;
+
+    private NoteFlip _noteTurnet = NoteFlip.FRONT;
 
     // Start is called before the first frame update
     void Start() {
@@ -36,12 +44,13 @@ public class Note : MonoBehaviour, Interactable {
 
 
     public void Interact() {
-        StartNoteTransition(NoteDirection.TO_FOREGROUND);
+        StartNoteTransition(NoteDirection.TO_FOREGROUND, NoteFlip.FRONT);
     }
 
-    public void StartNoteTransition(NoteDirection direction) {
+    public void StartNoteTransition(NoteDirection direction, NoteFlip noteTurnet) {
         elapsedTime = 0;
         _direction = direction;
+        _noteTurnet = noteTurnet;
     }
 
 
@@ -86,5 +95,37 @@ public class Note : MonoBehaviour, Interactable {
             this.transform.localScale == _startingScale){
             _direction = NoteDirection.NONE;
         }
+    }
+
+    //invokes method to rotate note
+    public void OnMouseDown(){
+        StartCoroutine(RotateNoteToBack());
+    }
+
+    private IEnumerator RotateNoteToBack(){
+        if(_noteTurnet==NoteFlip.FRONT){
+            for(float i = 0f; i<=180f; i+=10){
+                transform.rotation = Quaternion.Euler(0f, i, 0f);
+                yield return new WaitForSeconds(0.05f);
+            }
+        }
+        else{
+            for(float i = 180f; i>=0f; i-=10){
+                transform.rotation = Quaternion.Euler(0f, i, 0f);
+                yield return new WaitForSeconds(0.05f);
+            }
+        }
+
+        _noteTurnet = NoteFlip.BACK;
+    }
+
+    private IEnumerator RotateNoteToFront(){
+        yield return new WaitForSeconds(0.2f);
+        for (float i = 180f; i>=0f; i+=10){
+            transform.rotation = Quaternion.Euler(0f, i, 0f);
+            yield return new WaitForSeconds(0.05f);
+        }
+
+        _noteTurnet = NoteFlip.FRONT;
     }
 }

@@ -13,7 +13,7 @@ public class NoteView : View {
     public override void Initialize() {
         _exitBtn.onClick.AddListener(() => {
             Debug.Log("Exit Note Clicked");
-            SelectedNote.StartNoteTransition(NoteDirection.TO_BACKGROUND);
+            SelectedNote.StartNoteTransition(NoteDirection.TO_BACKGROUND, NoteFlip.FRONT);
         });
     }
 

@@ -11,7 +11,6 @@ public class UIManager : MonoBehaviour {
 
     private void Awake() {
         if (Instance != null && Instance != this) {
-            Debug.Log("en awakeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
             Destroy(this);
             return;
         }
@@ -20,8 +19,6 @@ public class UIManager : MonoBehaviour {
 
     private void Start() {
        for (int i = 0; i < Instance.views.Length; i++) {
-            Debug.Log("en staaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaart");
-
             Instance.views[i].Initialize();
         } 
     }
@@ -29,10 +26,7 @@ public class UIManager : MonoBehaviour {
 
     public static T GetView<T>() where T : View {
         for (int i = 0; i < Instance.views.Length; i++) {
-            Debug.Log("en getvieeeeeeeeeeeeeeeeeeeeeeeeeeeeeew "+i);
-
             if (Instance.views[i] is T view) {
-                Debug.Log("en el if de getvieeeeeeeeeeeeeeeeeeeeeeeeeeeeeew "+i);
                 return view;
             }
         }
