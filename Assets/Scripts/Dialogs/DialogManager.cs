@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class DialogManager : MonoBehaviour {
-
-    public TextMeshProUGUI subsTextBox;
+    
+    public GameObject dialogBox;
+    private TextMeshProUGUI _characterNameTextBox;
+    private TextMeshProUGUI _subsTextBox;
 
     private DialogCollection _dialogCollection;
     private AudioSource audioSource;
@@ -25,6 +28,10 @@ public class DialogManager : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
+        _characterNameTextBox = GameObject.Find("CharacterName").GetComponent<TextMeshProUGUI>();
+        _subsTextBox = GameObject.Find("Subs").GetComponent<TextMeshProUGUI>();
+        dialogBox.SetActive(false);
+
         // Load dialogs from Resources/dialogs.json
         var dialogsFile = Resources.Load("dialogs") as TextAsset;
         Debug.Log("dialogsFile: " + dialogsFile);
@@ -54,11 +61,14 @@ public class DialogManager : MonoBehaviour {
     }
 
      private IEnumerator DisplaySubtitles(List<Subtitle> subtitles) {
+        dialogBox.SetActive(true);
         foreach (Subtitle sub in subtitles) {
-            subsTextBox.text = sub.text;
+            _characterNameTextBox.text = sub.characterName;
+            _subsTextBox.text = sub.text;
             yield return new WaitForSeconds(sub.duration);
         }
-        subsTextBox.text = "";
+        _characterNameTextBox.text = _subsTextBox.text = "";
+        dialogBox.SetActive(false);
     }
 
 }

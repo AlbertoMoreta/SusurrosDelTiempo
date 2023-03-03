@@ -1,10 +1,32 @@
 {
    "dialogLines":[
       {
+         "key":"1_señoras",
+         "audioPath":"todo",
+         "subtitles":[
+            {
+               "characterName": "Señora 1",
+               "text":"Que buen dia se ha quedado",
+               "duration":4
+            },
+            {
+               "characterName": "Señora 2",
+               "text":"Pues si hija, si",
+               "duration":3
+            },
+            {
+               "characterName": "",
+               "text":"Ve con dios",
+               "duration":3
+            }
+         ]
+      },
+      {
          "key":"1_test",
          "audioPath": "test_audio_clip",
          "subtitles":[
             {
+               "characterName": "Alberto",
                "text":"Prueba de clip de audio",
                "duration":3
             }
@@ -15,14 +37,17 @@
          "audioPath":"todo",
          "subtitles":[
             {
+               "characterName": "",
                "text":"Welcome Text 1",
                "duration":3
             },
             {
+               "characterName": "",
                "text":"Welcome Text 2",
                "duration":3
             },
             {
+               "characterName": "",
                "text":"Welcome Text 3",
                "duration":3
             }
