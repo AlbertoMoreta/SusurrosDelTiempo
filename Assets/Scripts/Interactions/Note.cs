@@ -65,8 +65,8 @@ public class Note : MonoBehaviour, Interactable {
         playerManager.SetFirstPersonModeActive(false);
         var playerCamera = playerManager.GetPlayerCamera();
         var endPosition = playerCamera.transform.position + playerCamera.transform.forward * 2;
-        var endRotation = playerCamera.transform.rotation * Quaternion.Euler(90,0,0);
-        var endScale = new Vector3(2f, _startingScale.y, 2f);
+        var endRotation = playerCamera.transform.rotation;// * Quaternion.Euler(0,90,0);
+        var endScale = new Vector3(2f, 2f, _startingScale.z);
         this.transform.position = Vector3.Slerp(this.transform.position, endPosition, percentageComplete);
         this.transform.rotation = Quaternion.Slerp(this.transform.rotation, endRotation, percentageComplete);
         this.transform.localScale = endScale;
@@ -103,11 +103,11 @@ public class Note : MonoBehaviour, Interactable {
     }
 
     private IEnumerator RotateNoteToBack(){
-        if(_noteTurnet==NoteFlip.FRONT){
+        //if(_noteTurnet==NoteFlip.FRONT){
             for(float i = 0f; i<=180f; i+=10){
                 transform.rotation = Quaternion.Euler(0f, i, 0f);
-                yield return new WaitForSeconds(0.05f);
-            }
+                yield return new WaitForSeconds(0.02f);
+            }/*
         }
         else{
             for(float i = 180f; i>=0f; i-=10){
@@ -115,7 +115,8 @@ public class Note : MonoBehaviour, Interactable {
                 yield return new WaitForSeconds(0.05f);
             }
         }
-
+        var finalRotation = Quaternion.Euler(0f, 180f, 0f);
+        this.transform.rotation = Quaternion.Slerp(this.transform.rotation, _startingRotation, 1);*/
         _noteTurnet = NoteFlip.BACK;
     }
 
@@ -123,7 +124,7 @@ public class Note : MonoBehaviour, Interactable {
         yield return new WaitForSeconds(0.2f);
         for (float i = 180f; i>=0f; i+=10){
             transform.rotation = Quaternion.Euler(0f, i, 0f);
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.02f);
         }
 
         _noteTurnet = NoteFlip.FRONT;
