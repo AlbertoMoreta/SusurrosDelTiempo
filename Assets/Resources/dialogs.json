@@ -411,6 +411,12 @@
                "text":"Ni el hijo de la Inés ha venido, que me suele acompañar al primer trago.",
                "position": 1,
                "duration":3
+            },
+            {
+               "characterName": "Borracho1",
+               "text":"Le espero una hora más y si no... me resignaré a beber solo.",
+               "position": 1,
+               "duration":3
             }
         ]
       },
