@@ -49,6 +49,7 @@
             {
                "characterName": "Señoras",
                "text":"Hace una hora me crucé con la Toñi donde Fermín y, chica...",
+               "hint":"A las 11:00 Señoras hablando sobre jaleos en casa de la maestra.",
                "position": 1,
                "duration":5
             },
@@ -73,6 +74,7 @@
             {
                "characterName": "Señoras",
                "text":"Pues me acerqué al ayuntamiento a preguntar, estuve hablando a las 9 con el cabo nuevo y le noté tenso.",
+               "hint":"A las 9:00 señora hablando con el cabo",
                "position": 1,
                "duration":7
             },
@@ -108,7 +110,7 @@
             },
             {
                "characterName": "Señoras",
-               "text":"Cuando el hijo dijo que se casaba con semejante elementa .              ",
+               "text":"Cuando el hijo dijo que se casaba con semejante elementa.",
                "position": -1,
                "duration":4
             },
@@ -157,6 +159,7 @@
             {
                "characterName": "Borrachos",
                "text":"Esta tarde a las 7 se vuelven a ir para seguir trabajando.",
+               "hint":"A las 19:00 Epifanio se va a trabajar.",
                "position": -1,
                "duration":4
             },
