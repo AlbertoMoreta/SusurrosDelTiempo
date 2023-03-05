@@ -30,7 +30,13 @@
             },
             {
                "characterName": "Angustias",
-               "text":"Esta mañana me he cruzado al marido y llevaba una cara de mustio... ¿Crees que le ha abandonado?",
+               "text":"Esta mañana me he cruzado al marido y llevaba una cara de mustio...",
+               "position": 2,
+               "duration":3
+            },
+            {
+               "characterName": "Angustias",
+               "text":"¿Crees que le ha abandonado?",
                "position": 2,
                "duration":3
             },
@@ -145,13 +151,13 @@
             {
                "characterName": "Evaristo",
                "text":"Lo sé, con toda la gente que se está yendo a la ciudad Epifanio y los chicos no dan para más.",
-               "position": 1,
+               "position": -1,
                "duration":3
             },
             {
                "characterName": "Evaristo",
                "text":"Esta tarde a las 7 se vuelven a ir para seguir trabajando.",
-               "position": 1,
+               "position": -1,
                "duration":3
             },
             {
@@ -163,13 +169,13 @@
             {
                "characterName": "Evaristo",
                "text":"No me extraña, con la que debe de tener en casa cualquiera estaría así.",
-               "position": 1,
+               "position": -1,
                "duration":3
             },
             {
                "characterName": "Evaristo",
                "text":"Y con tanto trabajo no tiene tiempo ni para beber con nosotros.",
-               "position": 1,
+               "position": -1,
                "duration":3
             },
             {
@@ -181,7 +187,7 @@
             {
                "characterName": "Evaristo",
                "text":"Deberíamos beber otra más ahora, ¡Fermín otra ronda!",
-               "position": 1,
+               "position": -1,
                "duration":3
             }
          ]
@@ -192,24 +198,186 @@
          "subtitles":[
             {
                "characterName": "Dolores",
-               "text":"",
+               "text":"Buenos días Cabo Menendez.",
                "position": 1,
                "duration":3
             },
             {
-               "characterName": "",
-               "text":"",
+               "characterName": "Cabo Menendez",
+               "text":"Buenos días señora, ¿qué tal la mañana?",
+               "position": 2,
+               "duration":3
+            },
+            {
+               "characterName": "Dolores",
+               "text":"Todo bien, hijo. Aunque quería preguntarte sobre la maestra.",
                "position": 1,
                "duration":3
             },
             {
-               "characterName": "",
-               "text":"",
+               "characterName": "Dolores",
+               "text":"Hoy no asistió a la escuela",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Cabo Menendez",
+               "text":"Estará enferma...",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Dolores",
+               "text":"¡Pero ayer estaba perfectamente!",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Cabo Menendez",
+               "text":"¿Pero no puede haber enfermado desde ayer?",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Dolores",
+               "text":"Puede ser pero...",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Cabo Menendez",
+               "text":"¿La volvió a ver usted?",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Dolores",
+               "text":"No no pero...",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Cabo Menendez",
+               "text":"Mire señora, no tengo el día para perder el tiempo con estas tonterias.",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Dolores",
+               "text":"Tienes razón hijo, vaya con dios.",
                "position": 1,
                "duration":3
             }
          ]
       },
+      {
+         "key":"1_GC_F",
+         "audioPath":"todo",
+         "subtitles":[
+            {
+               "characterName": "Cabo Menendez",
+               "text":"No me paran de preguntar sobre la dichosa maestra... estoy harto.",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Falangista Fausto",
+               "text":"Bueno, muerto el perro se acabó la rabia jajaja.",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Cabo Menendez",
+               "text":"Shh calla. ¡Estás loco! Hay gente paseando por la calle.",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Falangista Fausto",
+               "text":"¿Te crees que van a sospechar de nosotros? ",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Falangista Fausto",
+               "text":"Solo estamos hablando del 'café'.",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Cabo Menendez",
+               "text":"Tienes razón, solo tomamos un poco de café con ella jajaja.",
+               "position": 1,
+               "duration":3
+            }
+         ]
+      },
+      {
+         "key":"2_borrachos",
+         "audioPath":"todo",
+         "subtitles":[
+            {
+               "characterName": "Alfredo",
+               "text":"Yo no quiero pensar mal de Paco... ",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Alfredo",
+               "text":"Pero últimamente pasa demasiado tiempo con la de Epifanio.",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Evaristo",
+               "text":"Es de buen saber que ahí algo pasa, pobre Epifanio.",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Evaristo",
+               "text":"Creo que se han fugado.",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Alfredo",
+               "text":"¿¿¿Qué???",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Evaristo",
+               "text":"¡Sí! Piensalo, no se les ha vuelto a ver a ninguno de los dos desde ayer.",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Alfredo",
+               "text":"No me puedo creer que haya pasado esto...",
+               "position": 1,
+               "duration":3
+            }
+         ]
+      },
+      {
+         "key":"1_Placido",
+         "audioPath":"todo",
+         "subtitles":[
+            {
+               "characterName": "Placido",
+               "text":"¡Carmen abre la puerta!¡vamos!",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Placido",
+               "text":"Tenemos que irnos ya o será muy tarde...",
+               "position": 1,
+               "duration":3
+            }
+         ]
+      }
       {
          "key":"1_welcome",
          "audioPath":"todo",
