@@ -15,6 +15,8 @@ public class DialogManager : MonoBehaviour {
     public GameObject dialogBox;
     public float dialogBoxOffset = 1f;
     private TextMeshProUGUI _subsTextBox;
+    
+    private Transform _originalParent;
 
     private DialogCollection _dialogCollection;
     private AudioSource audioSource;
@@ -36,6 +38,7 @@ public class DialogManager : MonoBehaviour {
     void Start() {
         _subsTextBox = GameObject.Find("Subs").GetComponent<TextMeshProUGUI>();
         _background = GameObject.Find("Background");
+        _originalParent = dialogBox.transform.parent;
         dialogBox.SetActive(false);
 
         // Load dialogs from Resources/dialogs.json
@@ -71,6 +74,7 @@ public class DialogManager : MonoBehaviour {
 
         foreach (Subtitle sub in subtitles) { 
             var character = GameObject.Find(sub.characterName);
+            dialogBox.transform.parent = character.transform.parent;
             float xOffset = 0;
             Debug.Log("Position: " + sub.position);
             switch(sub.position) {
@@ -91,6 +95,7 @@ public class DialogManager : MonoBehaviour {
         }
         _subsTextBox.text = "";
         _background.transform.localRotation = startingRotation;
+        dialogBox.transform.parent =_originalParent;
         dialogBox.SetActive(false);
     }
 
