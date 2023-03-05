@@ -5,7 +5,6 @@ using UnityEngine;
 public enum MODE {
     RELEASED = 0,
     GRAB = 1,
-    GRABBED = 2,
 }
 
 public class Grabbable : MonoBehaviour, Interactable {
@@ -15,7 +14,7 @@ public class Grabbable : MonoBehaviour, Interactable {
     private Transform _originalParent;
     private MODE _currentMode = MODE.RELEASED;
     private float _elapsedTime = 0f;
-    private float _desiredDuration = 3f;
+    private float _desiredDuration = 1f;
     private Rigidbody _rigidbody;
 
 
@@ -27,48 +26,55 @@ public class Grabbable : MonoBehaviour, Interactable {
 
     // Update is called once per frame
     void Update() {
-        if(_currentMode == MODE.GRAB){
+        if(_currentMode != MODE.RELEASED){
             Grab(); 
+
+            if (Input.GetMouseButtonDown(1)) {
+                Throw();
+            }
         }
     }
 
     public void Interact() {
         Debug.Log("Mode: " + _currentMode);
+        _elapsedTime = 0;
         switch(_currentMode){
-            case MODE.GRABBED:
             case MODE.GRAB: Release(); break;
             case MODE.RELEASED: _currentMode = MODE.GRAB; break;
         }
     }
 
     void Grab() {
-        Debug.Log("Grab");
         this.transform.parent = grabber.transform;
-        _rigidbody.isKinematic = true;
+        
+        _rigidbody.useGravity = false;
+        _rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
+        
+        var playerManager = PlayerManager.Instance;
+        var playerCamera = playerManager.GetPlayerCamera();
+        var endPosition = playerCamera.transform.position + playerCamera.transform.forward * 2;
 
         _elapsedTime += Time.deltaTime;
         float percentageComplete = _elapsedTime / _desiredDuration;
 
-        var playerManager = PlayerManager.Instance;
-        var playerCamera = playerManager.GetPlayerCamera();
-        var endPosition = playerCamera.transform.position + playerCamera.transform.forward * 2;
-        var endRotation = playerCamera.transform.rotation * Quaternion.Euler(-90,-90,90);
+        var desiredPosition = Vector3.Slerp(this.transform.position, endPosition, percentageComplete);
 
-        this.transform.position = Vector3.Slerp(this.transform.position, endPosition, percentageComplete);
-        this.transform.rotation = Quaternion.Slerp(this.transform.rotation, endRotation, percentageComplete);
-
-        if(this.transform.position == endPosition &&
-            this.transform.rotation == endRotation){
-           _currentMode = MODE.GRABBED; 
-        }
+        _rigidbody.MovePosition(desiredPosition);
 
     }
 
     void Release() {
         Debug.Log("Release");
+        _rigidbody.velocity = grabber.GetComponentInParent<CharacterController>().velocity;
         this.transform.parent = _originalParent;
-        _rigidbody.isKinematic = false;
-        _rigidbody.AddForce(grabber.transform.forward * force, ForceMode.Impulse);
+        _rigidbody.useGravity = true;
+        _rigidbody.constraints = RigidbodyConstraints.None;
         _currentMode = MODE.RELEASED;
+    }
+
+    void Throw() {
+        Debug.Log("Throw");
+        Release();
+        _rigidbody.AddForce(grabber.transform.forward * force, ForceMode.Impulse);
     }
 }

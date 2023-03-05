@@ -9,7 +9,7 @@ public class TimeTravelManager : MonoBehaviour {
     public GameObject defaultTime;
     public GameObject[] times;
 
-    private int _currentHour = 1;    
+    private int _currentHour = 13;    
     private GameObject _currentTime;
 
     private GameObject _sun;

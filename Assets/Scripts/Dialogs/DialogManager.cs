@@ -46,7 +46,7 @@ public class DialogManager : MonoBehaviour {
 
     // Play dialog: DialogManager.Instance.SendMessage("StartDialog", "dialog_key");
     public void StartDialog(string dialogKey) {
-        if(!audioSource.isPlaying){
+        if(!audioSource.isPlaying && !dialogBox.activeSelf){
             var selectedDialog = _dialogCollection.dialogLines.First(dialog => dialog.key == dialogKey);
             PlayAudio(selectedDialog.audioPath);
             StartCoroutine(DisplaySubtitles(selectedDialog.subtitles));
@@ -62,7 +62,10 @@ public class DialogManager : MonoBehaviour {
 
      private IEnumerator DisplaySubtitles(List<Subtitle> subtitles) {
         dialogBox.SetActive(true);
-        foreach (Subtitle sub in subtitles) {
+
+        foreach (Subtitle sub in subtitles) { 
+            var character = GameObject.Find(sub.characterName);
+            dialogBox.transform.position = character.transform.position + new Vector3(0, character.transform.position.y + 0.3f, 0);
             _characterNameTextBox.text = sub.characterName;
             _subsTextBox.text = sub.text;
             yield return new WaitForSeconds(sub.duration);

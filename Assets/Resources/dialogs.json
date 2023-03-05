@@ -5,17 +5,17 @@
          "audioPath":"todo",
          "subtitles":[
             {
-               "characterName": "Señora 1",
+               "characterName": "Charo",
                "text":"Que buen dia se ha quedado",
                "duration":4
             },
             {
-               "characterName": "Señora 2",
+               "characterName": "Tomasa",
                "text":"Pues si hija, si",
                "duration":3
             },
             {
-               "characterName": "",
+               "characterName": "Charo",
                "text":"Ve con dios",
                "duration":3
             }
