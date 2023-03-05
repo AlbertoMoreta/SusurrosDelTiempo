@@ -22,8 +22,6 @@ public class Clock : MonoBehaviour, Interactable {
     private SphereCollider _collider;
     private MeshRenderer _renderer;
 
-    public float _scale = 2f;
-    public float _distance = 0.1f;
 
     // Start is called before the first frame update
     void Start() {
@@ -64,9 +62,9 @@ public class Clock : MonoBehaviour, Interactable {
         var playerManager = PlayerManager.Instance;
         playerManager.SetFirstPersonModeActive(false);
         var playerCamera = playerManager.GetPlayerCamera();
-        var endPosition = playerCamera.transform.position + playerCamera.transform.forward * _distance;
+        var endPosition = playerCamera.transform.position + playerCamera.transform.forward;
         var endRotation = playerCamera.transform.rotation * Quaternion.Euler(-90,-90,90);
-        var endScale = new Vector3(_scale, _startingScale.y, _scale);
+        var endScale = new Vector3(1f, _startingScale.y, 1f);
         this.transform.position = Vector3.Slerp(this.transform.position, endPosition, percentageComplete);
         this.transform.rotation = Quaternion.Slerp(this.transform.rotation, endRotation, percentageComplete);
         this.transform.localScale = endScale;

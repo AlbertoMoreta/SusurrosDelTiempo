@@ -16,6 +16,8 @@ public enum NoteFlip{
 
 public class Note : MonoBehaviour, Interactable {
 
+    public bool LockRotation = false;
+
     private float desiredDuration = 3f;
     private float elapsedTime;
 
@@ -65,15 +67,15 @@ public class Note : MonoBehaviour, Interactable {
         var playerManager = PlayerManager.Instance;
         playerManager.SetFirstPersonModeActive(false);
         var playerCamera = playerManager.GetPlayerCamera();
-        var endPosition = playerCamera.transform.position + playerCamera.transform.forward * 2;
-        var endRotation = playerCamera.transform.rotation;// * Quaternion.Euler(0,90,0);
-        var endScale = new Vector3(2f, 2f, _startingScale.z);
+        var endPosition = playerCamera.transform.position + playerCamera.transform.forward;
+        var endRotation = playerCamera.transform.rotation * Quaternion.Euler(0,180,0);
+        var endScale = new Vector3(this.transform.localScale.x, this.transform.localScale.y, _startingScale.z);
         this.transform.position = Vector3.Slerp(this.transform.position, endPosition, percentageComplete);
         this.transform.rotation = Quaternion.Slerp(this.transform.rotation, endRotation, percentageComplete);
         this.transform.localScale = endScale;
-        if(this.transform.position == endPosition && 
-            this.transform.rotation == endRotation &&
-            this.transform.localScale == endScale){
+        
+        
+        if(Vector3.Distance(this.transform.position, endPosition) < 0.1){
             _direction = NoteDirection.NONE;
         }
     }
@@ -91,16 +93,16 @@ public class Note : MonoBehaviour, Interactable {
 
         var playerManager = PlayerManager.Instance;
         playerManager.SetFirstPersonModeActive(true);
-        if(this.transform.position == _startingPosition && 
-            this.transform.rotation == _startingRotation &&
-            this.transform.localScale == _startingScale){
+        if(Vector3.Distance(this.transform.position, _startingPosition) < 0.1){
             _direction = NoteDirection.NONE;
         }
     }
 
     //invokes method to rotate note
     public void OnMouseDown(){
-        StartCoroutine(RotateNoteToBack());
+        if(LockRotation) {
+            StartCoroutine(RotateNoteToBack());
+        }
     }
 
     private IEnumerator RotateNoteToBack(){

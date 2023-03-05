@@ -74,7 +74,7 @@ Transform:
   m_GameObject: {fileID: 3845516545379813553}
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: -10.118094, y: 7.5409803, z: -3.2977514}
-  m_LocalScale: {x: 4, y: 0.032188, z: 4}
+  m_LocalScale: {x: 0.5, y: 0.006, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8973845215841191639}
@@ -145,6 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff80ebe8861c48642a057f357fcb9b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _scale: 2
+  _distance: 0.1
 --- !u!135 &4960950079521178355
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -342,6 +344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _midnightCollider: {fileID: 8203605701834048281}
+  minutesHandle: {fileID: 0}
   timeFormat: 0
 --- !u!65 &6558939270145666544
 BoxCollider:
