@@ -8,13 +8,13 @@
                "characterName": "Dolores",
                "text":"¿Te has enterado? Hoy no ha habido escuela porque ha faltado la maestra.",
                "position": 1,
-               "duration":3
+               "duration":4
             },
             {
                "characterName": "Angustias",
                "text":"Esa mujer tan delgaducha siempre ha tenido pinta de enfermar fácil.",
-               "position": 2,
-               "duration":3
+               "position": -1,
+               "duration":4
             },
             {
                "characterName": "Dolores",
@@ -25,38 +25,38 @@
             {
                "characterName": "Angustias",
                "text":"¿Qué me dices? Ay, pues fíjate que me cuadra.",
-               "position": 2,
-               "duration":3
+               "position": -1,
+               "duration":5
             },
             {
                "characterName": "Angustias",
                "text":"Esta mañana me he cruzado al marido y llevaba una cara de mustio...",
-               "position": 2,
-               "duration":3
+               "position": -1,
+               "duration":4
             },
             {
                "characterName": "Angustias",
                "text":"¿Crees que le ha abandonado?",
-               "position": 2,
-               "duration":3
+               "position": -1,
+               "duration":2
             },
             {
                "characterName": "Dolores",
                "text":"Calla, calla, no debían estar las cosas muy católicas entre ellos.",
                "position": 1,
-               "duration":3
+               "duration":4
             },
             {
                "characterName": "Dolores",
                "text":"Hace una hora me crucé con la Toñi donde Fermín y, chica...",
                "position": 1,
-               "duration":3
+               "duration":5
             },
             {
                "characterName": "Dolores",
                "text":"Me contó que de primera mano sabía que tenían jaleos en casa, pero no soy yo de contar cosas de otras personas, Dios me guarde.",
                "position": 1,
-               "duration":3
+               "duration":9
             }
          ]
       },
@@ -72,27 +72,27 @@
             },
             {
                "characterName": "Dolores",
-               "text":"Me acerqué al ayuntamiento a preguntar, estuve hablando a las 9 con el cabo nuevo y le noté tenso.",
+               "text":"Pues me acerqué al ayuntamiento a preguntar, estuve hablando a las 9 con el cabo nuevo y le noté tenso.",
                "position": 1,
-               "duration":3
+               "duration":7
             },
             {
                "characterName": "Dolores",
                "text":"Algo raro ha pasado...",
                "position": 1,
-               "duration":3
+               "duration":2
             },
             {
                "characterName": "Toñi",
                "text":"Pues ayer salí a dar un paseo largo a que me diera la fresca y se me alargó un poco de más. ¡Qué luna había, hija!",
-               "position": 1,
-               "duration":3
+               "position": -1,
+               "duration":8
             },
             {
                "characterName": "Toñi",
                "text":"Total, que volviendo a eso de la una, pasé por delante de su casa y estaban teniendo una bronca de muy señor mío.",
-               "position": 1,
-               "duration":3
+               "position": -1,
+               "duration":8
             },
             {
                "characterName": "Dolores",
@@ -103,14 +103,14 @@
             {
                "characterName": "Toñi",
                "text":"Ay la pobre Inés, el disgusto que se llevó la pobre…",
-               "position": 1,
-               "duration":3
+               "position": -1,
+               "duration":4
             },
             {
                "characterName": "Toñi",
                "text":"Cuando el hijo dijo que se casaba con semejante elementa .              ",
-               "position": 1,
-               "duration":3
+               "position": -1,
+               "duration":4
             },
             {
                "characterName": "Dolores",
@@ -121,8 +121,8 @@
             {
                "characterName": "Toñi",
                "text":"¿Te enteraste que quitó el crucifijo de su clase?",
-               "position": 1,
-               "duration":3
+               "position": -1,
+               "duration":4
             },
             {
                "characterName": "Dolores",
@@ -134,7 +134,7 @@
                "characterName": "Dolores",
                "text":"Por no hablar de que normalmente va hecha unos zarrios…",
                "position": 1,
-               "duration":3
+               "duration":5
             }
          ]
       },
@@ -146,49 +146,49 @@
                "characterName": "Alfredo",
                "text":"La última cosecha no fue muy bien, a este paso nos vamos a morir de hambre...",
                "position": 1,
-               "duration":3
+               "duration":5
             },
             {
                "characterName": "Evaristo",
                "text":"Lo sé, con toda la gente que se está yendo a la ciudad Epifanio y los chicos no dan para más.",
                "position": -1,
-               "duration":3
+               "duration":5
             },
             {
                "characterName": "Evaristo",
                "text":"Esta tarde a las 7 se vuelven a ir para seguir trabajando.",
                "position": -1,
-               "duration":3
+               "duration":4
             },
             {
                "characterName": "Alfredo",
                "text":"Hablando de Epifanio, hoy se le veía muy decaído cuando fue a trabajar, dudo que hasta cerrase la puerta de su casa.",
                "position": 1,
-               "duration":3
+               "duration":7
             },
             {
                "characterName": "Evaristo",
                "text":"No me extraña, con la que debe de tener en casa cualquiera estaría así.",
                "position": -1,
-               "duration":3
+               "duration":4
             },
             {
                "characterName": "Evaristo",
                "text":"Y con tanto trabajo no tiene tiempo ni para beber con nosotros.",
                "position": -1,
-               "duration":3
+               "duration":4
             },
             {
                "characterName": "Alfredo",
                "text":"¡Con lo buena que está esta cerveza!",
                "position": 1,
-               "duration":3
+               "duration":2
             },
             {
                "characterName": "Evaristo",
                "text":"Deberíamos pedirnos otra, ¡Fermín otra ronda!",
                "position": -1,
-               "duration":3
+               "duration":6
             }
          ]
       },
@@ -200,67 +200,67 @@
                "characterName": "Dolores",
                "text":"Buenos días Cabo Menendez.",
                "position": 1,
-               "duration":3
+               "duration":2
             },
             {
                "characterName": "Cabo Menendez",
                "text":"Buenos días señora, ¿qué tal la mañana?",
-               "position": 2,
-               "duration":3
+               "position": -1,
+               "duration":2
             },
             {
                "characterName": "Dolores",
                "text":"Todo bien, hijo. Aunque quería preguntarte sobre la maestra.",
                "position": 1,
-               "duration":3
+               "duration":4
             },
             {
                "characterName": "Dolores",
                "text":"Hoy no asistió a la escuela",
                "position": 1,
-               "duration":3
+               "duration":2
             },
             {
                "characterName": "Cabo Menendez",
                "text":"Estará enferma...",
-               "position": 1,
-               "duration":3
+               "position": -1,
+               "duration":1
             },
             {
                "characterName": "Dolores",
                "text":"¡Pero ayer estaba perfectamente!",
                "position": 1,
-               "duration":3
+               "duration":2
             },
             {
                "characterName": "Cabo Menendez",
                "text":"¿Pero no puede haber enfermado desde ayer?",
-               "position": 1,
-               "duration":3
+               "position": -1,
+               "duration":2
             },
             {
                "characterName": "Dolores",
                "text":"Puede ser pero...",
                "position": 1,
-               "duration":3
+               "duration":1
             },
             {
                "characterName": "Cabo Menendez",
                "text":"¿La volvió a ver usted?",
-               "position": 1,
-               "duration":3
+               "position": -1,
+               "duration":2
             },
             {
                "characterName": "Dolores",
                "text":"No no pero...",
                "position": 1,
-               "duration":3
+               "duration":2
             },
             {
                "characterName": "Cabo Menendez",
                "text":"Mire señora, no tengo el día para perder el tiempo con estas tonterias.",
-               "position": 1,
-               "duration":3
+               "position": -1,
+               "duration":5
             },
             {
                "characterName": "Dolores",
@@ -283,7 +283,7 @@
             {
                "characterName": "Falangista Fausto",
                "text":"Bueno, muerto el perro se acabó la rabia jajaja.",
-               "position": 1,
+               "position": -1,
                "duration":3
             },
             {
@@ -295,13 +295,13 @@
             {
                "characterName": "Falangista Fausto",
                "text":"¿Te crees que van a sospechar de nosotros? ",
-               "position": 1,
+               "position": -1,
                "duration":3
             },
             {
                "characterName": "Falangista Fausto",
                "text":"Solo estamos hablando del 'café'.",
-               "position": 1,
+               "position": -1,
                "duration":3
             },
             {
@@ -326,37 +326,37 @@
                "characterName": "Alfredo",
                "text":"Pero últimamente pasa demasiado tiempo con la de Epifanio.",
                "position": 1,
-               "duration":3
+               "duration":4
             },
             {
                "characterName": "Evaristo",
                "text":"Es de buen saber que ahí algo pasa, pobre Epifanio.",
-               "position": 1,
-               "duration":3
+               "position": -1,
+               "duration":4
             },
             {
                "characterName": "Evaristo",
                "text":"Creo que se han fugado.",
-               "position": 1,
-               "duration":3
+               "position": -1,
+               "duration":2
             },
             {
                "characterName": "Alfredo",
                "text":"¿¿¿Qué???",
                "position": 1,
-               "duration":3
+               "duration":2
             },
             {
                "characterName": "Evaristo",
                "text":"¡Sí! Piensalo, no se les ha vuelto a ver a ninguno de los dos desde ayer.",
-               "position": 1,
-               "duration":3
+               "position": -1,
+               "duration":4
             },
             {
                "characterName": "Alfredo",
                "text":"No me puedo creer, que pase esto...",
                "position": 1,
-               "duration":3
+               "duration":4
             }
          ]
       },
@@ -365,19 +365,67 @@
          "audioPath":"todo",
          "subtitles":[
             {
-               "characterName": "Placido",
+               "characterName": "Plácido",
                "text":"¡Carmen abre la puerta!¡vamos!",
                "position": 1,
-               "duration":3
+               "duration":2
             },
             {
-               "characterName": "Placido",
+               "characterName": "Plácido",
                "text":"Tenemos que irnos ya o será muy tarde...",
                "position": 1,
                "duration":3
             }
          ]
-      }
+      },
+      {
+         "key":"1_Epifanio-Teresa",
+         "audioPath":"todo",
+         "subtitles":[
+            {
+               "characterName": "Epifanio",
+               "text":"No podemos retrasarlo más, Teresa. Debería ser hoy.",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Teresa",
+               "text":"Me da igual lo que le pase a este pueblo, pero no quiero dejar a los niños.",
+               "position": -1,
+               "duration":3
+            },
+            {
+               "characterName": "Epifanio",
+               "text":"A mí me da igual lo que le pase a cualquiera salvo a ti.",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Teresa",
+               "text":"Epifanio…",
+               "position": -1,
+               "duration":3
+            },
+            {
+               "characterName": "Epifanio",
+               "text":"Voy a preparar los últimos detalles, hoy Paco me tiene preparados los pasaportes falsos.",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Epifanio",
+               "text":"Nos vemos al alba detrás de la iglesia, ¿vale?",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Teresa",
+               "text":"Está bien. Voy a preparar víveres.",
+               "position": -1,
+               "duration":3
+            }
+         ]
+      },
       {
          "key":"1_welcome",
          "audioPath":"todo",
