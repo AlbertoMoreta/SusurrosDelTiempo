@@ -469,6 +469,42 @@
         ]
       },
       {
+         "key":"6_espera",
+         "audioPath":"todo",
+         "subtitles":[
+            {
+               "characterName": "Marido",
+               "text":"Mi Teresa, ¿dónde estás?",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Marido",
+               "text":"Con lo puntual que tú eres siempre…",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Marido",
+               "text":"Espero que ese chasquido que vino del ayuntamiento hace un rato...",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Marido",
+               "text":"no fuese un disparo...",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Marido",
+               "text":"Ay, qué voy a hacer yo sin ti…",
+               "position": 1,
+               "duration":3
+            }
+        ]
+     },
+      {
          "key":"1_welcome",
          "audioPath":"todo",
          "subtitles":[
