@@ -2,7 +2,7 @@
    "dialogLines":[
       {
          "key":"1_senoras_plaza",
-         "audioPath": "test_audio_clip",
+         "audioPath": "Mujeres a las 12_00",
          "subtitles":[
             {
                "characterName": "Dolores",
@@ -62,7 +62,7 @@
       },
       {
          "key":"2_senoras_plaza",
-         "audioPath":"todo",
+         "audioPath":"Mujeres a las 11_00",
          "subtitles":[
             {
                "characterName": "Dolores",
@@ -140,7 +140,7 @@
       },
       {
          "key":"1_borrachos",
-         "audioPath":"todo",
+         "audioPath":"Borrachos a la una",
          "subtitles":[
             {
                "characterName": "Alfredo",
@@ -194,7 +194,7 @@
       },
       {
          "key":"1_GC_senora1",
-         "audioPath":"todo",
+         "audioPath":"Señora gc",
          "subtitles":[
             {
                "characterName": "Dolores",
@@ -272,7 +272,7 @@
       },
       {
          "key":"1_GC_F",
-         "audioPath":"todo",
+         "audioPath":"Gc y falangista",
          "subtitles":[
             {
                "characterName": "Cabo Menendez",
@@ -314,7 +314,7 @@
       },
       {
          "key":"2_borrachos",
-         "audioPath":"todo",
+         "audioPath":"Borrachos a las cuatro",
          "subtitles":[
             {
                "characterName": "Alfredo",
@@ -362,7 +362,7 @@
       },
       {
          "key":"1_Placido",
-         "audioPath":"todo",
+         "audioPath":"Placido",
          "subtitles":[
             {
                "characterName": "Plácido",
@@ -426,6 +426,84 @@
             }
          ]
       },
+      {
+         "key":"12_borracho",
+         "audioPath":"todo",
+         "subtitles":[
+            {
+               "characterName": "Borracho",
+               "text":"Chato mío de vino, aquí estamos otra vez tú y yo solos.",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Borracho",
+               "text":"Quedé con el resto al salir de la misa, y mira qué desplante.",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Borracho",
+               "text":"Cada vez hay menos compromiso en este pueblo con lo del beber",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Borracho",
+               "text":"¿Así cómo va a sacar Fermín el negocio adelante?",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Borracho",
+               "text":"Ni el hijo de la Inés ha venido, que me suele acompañar al primer trago.",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Borracho",
+               "text":"Le espero una hora más y si no... me resignaré a beber solo.",
+               "position": 1,
+               "duration":3
+            }
+        ]
+      },
+      {
+         "key":"6_espera",
+         "audioPath":"todo",
+         "subtitles":[
+            {
+               "characterName": "Epifanio",
+               "text":"Mi Teresa, ¿dónde estás?",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Epifanio",
+               "text":"Con lo puntual que tú eres siempre…",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Epifanio",
+               "text":"Espero que ese chasquido que vino del ayuntamiento hace un rato...",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Epifanio",
+               "text":"no fuese un disparo...",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Epifanio",
+               "text":"Ay, qué voy a hacer yo sin ti…",
+               "position": 1,
+               "duration":3
+            }
+        ]
+     },
       {
          "key":"1_welcome",
          "audioPath":"todo",
