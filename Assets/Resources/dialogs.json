@@ -7,16 +7,19 @@
             {
                "characterName": "Charo",
                "text":"Que buen dia se ha quedado",
+               "position": 1,
                "duration":4
             },
             {
                "characterName": "Tomasa",
                "text":"Pues si hija, si",
+               "position": 0,
                "duration":3
             },
             {
                "characterName": "Charo",
                "text":"Ve con dios",
+               "position": 1,
                "duration":3
             }
          ]
@@ -28,6 +31,7 @@
             {
                "characterName": "Alberto",
                "text":"Prueba de clip de audio",
+               "position": 1,
                "duration":3
             }
          ]
@@ -39,16 +43,19 @@
             {
                "characterName": "",
                "text":"Welcome Text 1",
+               "position": 1,
                "duration":3
             },
             {
                "characterName": "",
                "text":"Welcome Text 2",
+               "position": 1,
                "duration":3
             },
             {
                "characterName": "",
                "text":"Welcome Text 3",
+               "position": 1,
                "duration":3
             }
          ]

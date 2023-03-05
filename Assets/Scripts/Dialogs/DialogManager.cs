@@ -5,14 +5,21 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+public enum DIALOG_BOX_POSITIONS {
+    LEFT = 0,
+    RIGHT = 1
+}
+
 public class DialogManager : MonoBehaviour {
     
     public GameObject dialogBox;
+    public float dialogBoxOffset = 1f;
     private TextMeshProUGUI _characterNameTextBox;
     private TextMeshProUGUI _subsTextBox;
 
     private DialogCollection _dialogCollection;
     private AudioSource audioSource;
+    private GameObject _background;
 
     public static DialogManager Instance {
         get; private set;
@@ -30,6 +37,7 @@ public class DialogManager : MonoBehaviour {
     void Start() {
         _characterNameTextBox = GameObject.Find("CharacterName").GetComponent<TextMeshProUGUI>();
         _subsTextBox = GameObject.Find("Subs").GetComponent<TextMeshProUGUI>();
+        _background = GameObject.Find("Background");
         dialogBox.SetActive(false);
 
         // Load dialogs from Resources/dialogs.json
@@ -53,7 +61,6 @@ public class DialogManager : MonoBehaviour {
         }
     }
 
-
     private void PlayAudio(string audioName) {
         var audioPath = "Sounds/" + audioName;
         var audioClip = Resources.Load<AudioClip>(audioPath);
@@ -62,15 +69,31 @@ public class DialogManager : MonoBehaviour {
 
      private IEnumerator DisplaySubtitles(List<Subtitle> subtitles) {
         dialogBox.SetActive(true);
+        Quaternion startingRotation = _background.transform.localRotation;
 
         foreach (Subtitle sub in subtitles) { 
             var character = GameObject.Find(sub.characterName);
-            dialogBox.transform.position = character.transform.position + new Vector3(0, character.transform.position.y + 0.3f, 0);
+            float xOffset = 0;
+            Debug.Log("Position: " + sub.position);
+            switch(sub.position) {
+                case DIALOG_BOX_POSITIONS.RIGHT: {
+                    xOffset = -dialogBoxOffset;
+                    _background.transform.localRotation = startingRotation;
+                    break;
+                }
+                case DIALOG_BOX_POSITIONS.LEFT:{
+                    xOffset = dialogBoxOffset;
+                    _background.transform.localRotation *= Quaternion.AngleAxis(180, Vector3.forward);
+                    break;
+                }
+            }
+            dialogBox.transform.position = character.transform.position + new Vector3(xOffset, 0.7f, 0);
             _characterNameTextBox.text = sub.characterName;
             _subsTextBox.text = sub.text;
             yield return new WaitForSeconds(sub.duration);
         }
         _characterNameTextBox.text = _subsTextBox.text = "";
+        _background.transform.localRotation = startingRotation;
         dialogBox.SetActive(false);
     }
 
