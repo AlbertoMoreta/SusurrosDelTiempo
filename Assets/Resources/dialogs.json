@@ -186,7 +186,7 @@
             },
             {
                "characterName": "Evaristo",
-               "text":"Deberíamos beber otra más ahora, ¡Fermín otra ronda!",
+               "text":"Deberíamos pedirnos otra, ¡Fermín otra ronda!",
                "position": -1,
                "duration":3
             }
@@ -354,7 +354,7 @@
             },
             {
                "characterName": "Alfredo",
-               "text":"No me puedo creer que haya pasado esto...",
+               "text":"No me puedo creer, que pase esto...",
                "position": 1,
                "duration":3
             }
