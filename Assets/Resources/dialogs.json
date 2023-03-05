@@ -284,7 +284,7 @@
                "characterName": "Falangista",
                "text":"Bueno, muerto el perro se acabó la rabia jajaja.",
                "position": -1,
-               "duration":3
+               "duration":4
             },
             {
                "characterName": "Cabo Menendez",
@@ -308,7 +308,7 @@
                "characterName": "Cabo Menendez",
                "text":"Tienes razón, solo tomamos un poco de café con ella jajaja.",
                "position": 1,
-               "duration":3
+               "duration":5
             }
          ]
       },
@@ -380,13 +380,13 @@
       },
       {
          "key":"1_Epifanio-Teresa",
-         "audioPath":"todo",
+         "audioPath":"Epifanio_y_teresa",
          "subtitles":[
             {
                "characterName": "Discusion",
                "text":"No podemos retrasarlo más, Teresa. Debería ser hoy.",
                "position": 1,
-               "duration":3
+               "duration":4
             },
             {
                "characterName": "Discusion",
@@ -398,47 +398,47 @@
                "characterName": "Discusion",
                "text":"A mí me da igual lo que le pase a cualquiera salvo a ti.",
                "position": 1,
-               "duration":3
+               "duration":4
             },
             {
                "characterName": "Discusion",
                "text":"Epifanio…",
                "position": -1,
-               "duration":3
+               "duration":1
             },
             {
                "characterName": "Discusion",
                "text":"Voy a preparar los últimos detalles, hoy Paco me tiene preparados los pasaportes falsos.",
                "position": 1,
-               "duration":3
+               "duration":5
             },
             {
                "characterName": "Discusion",
                "text":"Nos vemos al alba detrás de la iglesia, ¿vale?",
                "position": 1,
-               "duration":3
+               "duration":2
             },
             {
                "characterName": "Discusion",
                "text":"Está bien. Voy a preparar víveres.",
                "position": -1,
-               "duration":3
+               "duration":4
             }
          ]
       },
       {
          "key":"12_borracho",
-         "audioPath":"todo",
+         "audioPath":"Borracho_solo",
          "subtitles":[
             {
                "characterName": "Borracho",
                "text":"Chato mío de vino, aquí estamos otra vez tú y yo solos.",
                "position": 1,
-               "duration":3
+               "duration":5
             },
             {
                "characterName": "Borracho",
-               "text":"Quedé con el resto al salir de la misa, y mira qué desplante.",
+               "text":"Habíamos quedado al salir de la misa, y mira qué desplante.",
                "position": 1,
                "duration":3
             },
@@ -446,7 +446,7 @@
                "characterName": "Borracho",
                "text":"Cada vez hay menos compromiso en este pueblo con lo del beber",
                "position": 1,
-               "duration":3
+               "duration":5
             },
             {
                "characterName": "Borracho",
@@ -459,18 +459,12 @@
                "text":"Ni el hijo de la Inés ha venido, que me suele acompañar al primer trago.",
                "position": 1,
                "duration":3
-            },
-            {
-               "characterName": "Borracho",
-               "text":"Le espero una hora más y si no... me resignaré a beber solo.",
-               "position": 1,
-               "duration":3
             }
         ]
       },
       {
          "key":"6_espera",
-         "audioPath":"todo",
+         "audioPath":"Epifanio_solo",
          "subtitles":[
             {
                "characterName": "Epifanio",
@@ -486,21 +480,15 @@
             },
             {
                "characterName": "Epifanio",
-               "text":"Espero que ese chasquido que vino del ayuntamiento hace un rato...",
+               "text":"Espero que ese chasquido que vino del ayuntamiento hace un rato no fuese un disparo...",
                "position": 1,
-               "duration":3
-            },
-            {
-               "characterName": "Epifanio",
-               "text":"no fuese un disparo...",
-               "position": 1,
-               "duration":3
+               "duration":6
             },
             {
                "characterName": "Epifanio",
                "text":"Ay, qué voy a hacer yo sin ti…",
                "position": 1,
-               "duration":3
+               "duration":4
             }
         ]
       }
