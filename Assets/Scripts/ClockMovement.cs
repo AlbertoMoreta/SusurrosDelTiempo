@@ -9,9 +9,11 @@ public enum MIDNIGHT_ENUM {
 public class ClockMovement : MonoBehaviour {
 
     public BoxCollider _midnightCollider;
+    public Transform minutesHandle;
     public MIDNIGHT_ENUM timeFormat = MIDNIGHT_ENUM.PM;
     private bool _isRotating;
     private int _previousHour;
+    private bool _rotateMinutes;
     
 
     // Update is called once per frame
@@ -62,18 +64,26 @@ public class ClockMovement : MonoBehaviour {
             }
 
             var from = transform.localRotation;
-            var to = Quaternion.Euler(0, angle, 0);
+            var tHours = Quaternion.Euler(0, angle, 0);
             // Debug.Log("PEVIOUS HOUR: " + _previousHour + "HOUR: " + hour + " ANGLE: " + angle + " FORMAT: " + timeFormat);
             // Debug.Log("ABS: " + Math.Abs(_previousHour - hour));
 
             if (Math.Abs(_previousHour - hour) <= 1) {
-                transform.localRotation = Quaternion.Lerp(from, to, 0.4f);
+                transform.localRotation = Quaternion.Lerp(from, tHours, 0.4f);
                 TimeTravelManager.Instance.SetTimeTravelHour(hour);
                 _previousHour = hour;
+                _rotateMinutes = true;
             } else {
                 Debug.Log("WRONG!");
             }
-            
+        }
+    
+        if (_rotateMinutes){
+            var step = Quaternion.Euler(0, 1, 0);
+            minutesHandle.localRotation *= step;
+            if (Math.Abs(minutesHandle.localRotation.y) < 0.01) {
+                _rotateMinutes = false;
+            }
         }
     }
 
