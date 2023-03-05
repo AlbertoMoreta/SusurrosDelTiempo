@@ -377,7 +377,91 @@
                "duration":3
             }
          ]
-      }
+      },
+      {
+         "key":"12_borracho",
+         "audioPath":"todo",
+         "subtitles":[
+            {
+               "characterName": "Borracho1",
+               "text":"Chato mío de vino, aquí estamos otra vez tú y yo solos.",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Borracho1",
+               "text":"Quedé con el resto al salir de la misa, y mira qué desplante.",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Borracho1",
+               "text":"Cada vez hay menos compromiso en este pueblo con lo del beber",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Borracho1",
+               "text":"¿Así cómo va a sacar Fermín el negocio adelante?",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Borracho1",
+               "text":"Ni el hijo de la Inés ha venido, que me suele acompañar al primer trago.",
+               "position": 1,
+               "duration":3
+            }
+        ]
+      },
+      {
+         "key":"1_discusion",
+         "audioPath":"todo",
+         "subtitles":[
+            {
+               "characterName": "Discusion",
+               "text":"No podemos retrasarlo más, Teresa. Debería ser hoy.",
+               "position": -1,
+               "duration":3
+            },
+            {
+               "characterName": "Discusion",
+               "text":"Me da igual la gente de este pueblo, pero no quiero dejar a los niños.",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Discusion",
+               "text":"A mí me da igual lo que le pase a cualquiera salvo a ti.",
+               "position": -1,
+               "duration":3
+            },
+            {
+               "characterName": "Discusion",
+               "text":"Epifanio…",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Discusion",
+               "text":"Voy a preparar los últimos detalles, hoy Paco me tiene preparados los pasaportes falsos.",
+               "position": -1,
+               "duration":3
+            },
+            {
+               "characterName": "Discusion",
+               "text":"Nos vemos al alba detrás de la iglesia, ¿vale?",
+               "position": -1,
+               "duration":3
+            },
+            {
+               "characterName": "Discusion",
+               "text":"Sí. Voy a preparar víveres.",
+               "position": 1,
+               "duration":3
+            },
+        ]
+      },
       {
          "key":"1_welcome",
          "audioPath":"todo",
