@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 public enum DIALOG_BOX_POSITIONS {
-    LEFT = 0,
+    LEFT = -1,
     RIGHT = 1
 }
 
@@ -14,7 +14,6 @@ public class DialogManager : MonoBehaviour {
     
     public GameObject dialogBox;
     public float dialogBoxOffset = 1f;
-    private TextMeshProUGUI _characterNameTextBox;
     private TextMeshProUGUI _subsTextBox;
 
     private DialogCollection _dialogCollection;
@@ -35,7 +34,6 @@ public class DialogManager : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        _characterNameTextBox = GameObject.Find("CharacterName").GetComponent<TextMeshProUGUI>();
         _subsTextBox = GameObject.Find("Subs").GetComponent<TextMeshProUGUI>();
         _background = GameObject.Find("Background");
         dialogBox.SetActive(false);
@@ -87,12 +85,11 @@ public class DialogManager : MonoBehaviour {
                     break;
                 }
             }
-            dialogBox.transform.position = character.transform.position + new Vector3(xOffset, 0.7f, 0);
-            _characterNameTextBox.text = sub.characterName;
+            dialogBox.transform.position = character.transform.position + new Vector3(xOffset, 0.5f, 0);
             _subsTextBox.text = sub.text;
             yield return new WaitForSeconds(sub.duration);
         }
-        _characterNameTextBox.text = _subsTextBox.text = "";
+        _subsTextBox.text = "";
         _background.transform.localRotation = startingRotation;
         dialogBox.SetActive(false);
     }

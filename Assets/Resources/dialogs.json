@@ -1,53 +1,53 @@
 {
    "dialogLines":[
       {
-         "key":"1_senoras_plaza",
+         "key":"1_señoras_plaza",
          "audioPath": "test_audio_clip",
          "subtitles":[
             {
-               "characterName": "Dolores",
+               "characterName": "Señoras",
                "text":"¿Te has enterado? Hoy no ha habido escuela porque ha faltado la maestra.",
                "position": 1,
                "duration":3
             },
             {
-               "characterName": "Angustias",
+               "characterName": "Señoras",
                "text":"Esa mujer tan delgaducha siempre ha tenido pinta de enfermar fácil.",
-               "position": 2,
+               "position": -1,
                "duration":3
             },
             {
-               "characterName": "Dolores",
+               "characterName": "Señoras",
                "text":"No, calla. Si es que ha desaparecido.",
                "position": 1,
                "duration":3
             },
             {
-               "characterName": "Angustias",
+               "characterName": "Señoras",
                "text":"¿Qué me dices? Ay, pues fíjate que me cuadra.",
-               "position": 2,
+               "position": -1,
                "duration":3
             },
             {
-               "characterName": "Angustias",
+               "characterName": "Señoras",
                "text":"Esta mañana me he cruzado al marido y llevaba una cara de mustio... ¿Crees que le ha abandonado?",
-               "position": 2,
+               "position": -1,
                "duration":3
             },
             {
-               "characterName": "Dolores",
+               "characterName": "Señoras",
                "text":"Calla, calla, no debían estar las cosas muy católicas entre ellos.",
                "position": 1,
                "duration":3
             },
             {
-               "characterName": "Dolores",
+               "characterName": "Señoras",
                "text":"Hace una hora me crucé con la Toñi donde Fermín y, chica...",
                "position": 1,
                "duration":3
             },
             {
-               "characterName": "Dolores",
+               "characterName": "Señoras",
                "text":"Me contó que de primera mano sabía que tenían jaleos en casa, pero no soy yo de contar cosas de otras personas, Dios me guarde.",
                "position": 1,
                "duration":3
