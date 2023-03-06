@@ -66,7 +66,7 @@ public class DialogManager : MonoBehaviour {
     }
 
     private void PlayAudio(string audioName) {
-        var audioPath = "Sounds/" + audioName;
+        var audioPath = "Sounds/Dialogs/" + audioName;
         var audioClip = Resources.Load<AudioClip>(audioPath);
         audioSource.PlayOneShot(audioClip);
     }
