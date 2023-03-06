@@ -45,6 +45,14 @@ public class Clock : MonoBehaviour, Interactable {
         StartClockTransition(ClockDirection.TO_FOREGROUND);
     }
 
+    public void Hover() {
+        _renderer.material.EnableKeyword("_EMISSION");
+    }
+
+    public void UnHover() {
+        _renderer.material.DisableKeyword("_EMISSION");
+    }
+
     public void StartClockTransition(ClockDirection direction) {
         elapsedTime = 0;
         _direction = direction;

@@ -27,7 +27,11 @@ public class PlayerInteraction : MonoBehaviour {
             if (Physics.Raycast(playerCamera.position, playerCamera.forward, out RaycastHit hit, distance, interactableLayers)) {
                 currentInteractable = hit.collider.GetComponent<Interactable>();
                 crosshair.sprite = activeCrosshair; 
+                currentInteractable.Hover();
             } else {
+                if(currentInteractable != null){
+                    currentInteractable.UnHover();
+                }
                 currentInteractable = null;
                 crosshair.sprite = defaultCrosshair;
             }
