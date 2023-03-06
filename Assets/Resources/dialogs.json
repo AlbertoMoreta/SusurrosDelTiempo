@@ -402,38 +402,38 @@
             {
                "characterName": "Discusion",
                "text":"No podemos retrasarlo más, Teresa. Debería ser hoy.",
-               "position": 1,
+               "position": -1,
                "duration":4
             },
             {
                "characterName": "Discusion",
                "text":"Me da igual lo que le pase a este pueblo, pero no quiero dejar a los niños.",
-               "position": -1,
+               "position": 1,
                "duration":3
             },
             {
                "characterName": "Discusion",
                "text":"A mí me da igual lo que le pase a cualquiera salvo a ti.",
-               "position": 1,
+               "position": -1,
                "duration":4
             },
             {
                "characterName": "Discusion",
                "text":"Epifanio…",
-               "position": -1,
+               "position": 1,
                "duration":1
             },
             {
                "characterName": "Discusion",
                "text":"Voy a preparar los últimos detalles, hoy Paco me tiene preparados los pasaportes falsos.",
-               "position": 1,
+               "position": -1,
                "duration":5
             },
             {
                "characterName": "Discusion",
                "text":"Nos vemos al alba detrás de la iglesia, ¿vale?",
                "hint":"Epifanio y Teresa quedan para huir al alba detrás de la Iglesia",
-               "position": 1,
+               "position": -1,
                "duration":2
             },
             {
