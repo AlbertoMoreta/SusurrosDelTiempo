@@ -382,13 +382,13 @@
          "audioPath":"Placido",
          "subtitles":[
             {
-               "characterName": "Plácido",
+               "characterName": "Placido",
                "text":"¡Carmen abre la puerta!¡vamos!",
                "position": 1,
                "duration":2
             },
             {
-               "characterName": "Plácido",
+               "characterName": "Placido",
                "text":"Tenemos que irnos ya o será muy tarde...",
                "position": 1,
                "duration":3
