@@ -132,4 +132,11 @@ public class Note : MonoBehaviour, Interactable {
 
         _noteTurnet = NoteFlip.FRONT;
     }
+
+
+    void Interactable.Hover() {
+    }
+
+    void Interactable.UnHover() {
+    }
 }

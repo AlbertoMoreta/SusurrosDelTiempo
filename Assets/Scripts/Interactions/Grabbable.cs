@@ -77,4 +77,11 @@ public class Grabbable : MonoBehaviour, Interactable {
         Release();
         _rigidbody.AddForce(grabber.transform.forward * force, ForceMode.Impulse);
     }
+
+
+    void Interactable.Hover() {
+    }
+
+    void Interactable.UnHover() {
+    }
 }
