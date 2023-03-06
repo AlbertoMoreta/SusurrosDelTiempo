@@ -145,8 +145,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff80ebe8861c48642a057f357fcb9b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scale: 2
-  _distance: 0.1
 --- !u!135 &4960950079521178355
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -344,8 +342,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _midnightCollider: {fileID: 8203605701834048281}
-  minutesHandle: {fileID: 0}
-  timeFormat: 0
+  minutesHandle: {fileID: 8973845215744649694}
+  timeFormat: 1
 --- !u!65 &6558939270145666544
 BoxCollider:
   m_ObjectHideFlags: 0

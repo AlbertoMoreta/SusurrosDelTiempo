@@ -2,7 +2,7 @@
    "dialogLines":[
       {
          "key":"1_senoras_plaza",
-         "audioPath": "Mujeres_a_las_12_00",
+         "audioPath": "Mujeres a las 12_00",
          "subtitles":[
             {
                "characterName": "Señoras",
@@ -49,6 +49,7 @@
             {
                "characterName": "Señoras",
                "text":"Hace una hora me crucé con la Toñi donde Fermín y, chica...",
+               "hint":"A las 11:00 Señoras hablando sobre jaleos donde Fermín.",
                "position": 1,
                "duration":5
             },
@@ -62,85 +63,87 @@
       },
       {
          "key":"2_senoras_plaza",
-         "audioPath":"Mujeres_a_las_11_00",
+         "audioPath":"Mujeres a las 11_00",
          "subtitles":[
             {
-               "characterName": "Señoras",
+               "characterName": "Dolores",
                "text":"¿Te enteraste de que no aparece la maestra?",
-               "position": 1,
+               "position": -1,
                "duration":3
             },
             {
-               "characterName": "Señoras",
+               "characterName": "Dolores",
                "text":"Pues me acerqué al ayuntamiento a preguntar, estuve hablando a las 9 con el cabo nuevo y le noté tenso.",
+               "hint":"A las 9:00 señora hablando con el cabo",
                "position": 1,
                "duration":7
             },
             {
-               "characterName": "Señoras",
+               "characterName": "Dolores",
                "text":"Algo raro ha pasado...",
-               "position": 1,
+               "position": -1,
                "duration":2
             },
             {
-               "characterName": "Señoras",
+               "characterName": "Toñi",
                "text":"Pues ayer salí a dar un paseo largo a que me diera la fresca y se me alargó un poco de más. ¡Qué luna había, hija!",
-               "position": -1,
+               "position": 1,
                "duration":8
             },
             {
-               "characterName": "Señoras",
+               "characterName": "Toñi",
                "text":"Total, que volviendo a eso de la una, pasé por delante de su casa y estaban teniendo una bronca de muy señor mío.",
-               "position": -1,
+               "hint":"A la 1:00 el matrimonio tenía una bronca en su casa.",
+               "position": 1,
                "duration":8
             },
             {
-               "characterName": "Señoras",
+               "characterName": "Dolores",
                "text":"Si es que esa mujer siempre ha sido un caso.",
-               "position": 1,
+               "position": -1,
                "duration":3
             },
             {
-               "characterName": "Señoras",
+               "characterName": "Toñi",
                "text":"Ay la pobre Inés, el disgusto que se llevó la pobre…",
-               "position": -1,
+               "position": 1,
                "duration":4
             },
             {
-               "characterName": "Señoras",
-               "text":"Cuando el hijo dijo que se casaba con semejante elementa .              ",
-               "position": -1,
+               "characterName": "Toñi",
+               "text":"Cuando el hijo dijo que se casaba con semejante elementa.",
+               "position": 1,
                "duration":4
             },
             {
-               "characterName": "Señoras",
+               "characterName": "Dolores",
                "text":"No sé quién llevará los pantalones en esa casa.",
-               "position": 1,
+               "position": -1,
                "duration":3
             },
             {
-               "characterName": "Señoras",
+               "characterName": "Toñi",
                "text":"¿Te enteraste que quitó el crucifijo de su clase?",
-               "position": -1,
+               "position": 1,
                "duration":4
             },
             {
-               "characterName": "Señoras",
+               "characterName": "Dolores",
                "text":"Al padre Andrés no le hizo pizca de gracia…",
-               "position": 1,
+               "position": -1,
                "duration":3
             },
             {
-               "characterName": "Señoras",
+               "characterName": "Dolores",
                "text":"Por no hablar de que normalmente va hecha unos zarrios…",
-               "position": 1,
+               "position": -1,
                "duration":5
             }
          ]
       },
       {
          "key":"1_borrachos",
-         "audioPath":"Borrachos_a_la_una",
+         "audioPath":"Borrachos a la una",
          "subtitles":[
             {
                "characterName": "Borrachos",
@@ -157,6 +160,7 @@
             {
                "characterName": "Borrachos",
                "text":"Esta tarde a las 7 se vuelven a ir para seguir trabajando.",
+               "hint":"A las 19:00 Epifanio se vuelve a ir al campo a trabajar.",
                "position": -1,
                "duration":4
             },
@@ -194,10 +198,10 @@
       },
       {
          "key":"1_GC_senora1",
-         "audioPath":"Señora_gc",
+         "audioPath":"Señora gc",
          "subtitles":[
             {
-               "characterName": "Dolores",
+               "characterName": "Toñi",
                "text":"Buenos días Cabo Menendez.",
                "position": 1,
                "duration":2
@@ -209,13 +213,13 @@
                "duration":2
             },
             {
-               "characterName": "Dolores",
+               "characterName": "Toñi",
                "text":"Todo bien, hijo. Aunque quería preguntarte sobre la maestra.",
                "position": 1,
                "duration":4
             },
             {
-               "characterName": "Dolores",
+               "characterName": "Toñi",
                "text":"Hoy no asistió a la escuela",
                "position": 1,
                "duration":2
@@ -227,7 +231,7 @@
                "duration":1
             },
             {
-               "characterName": "Dolores",
+               "characterName": "Toñi",
                "text":"¡Pero ayer estaba perfectamente!",
                "position": 1,
                "duration":2
@@ -239,7 +243,7 @@
                "duration":2
             },
             {
-               "characterName": "Dolores",
+               "characterName": "Toñi",
                "text":"Puede ser pero...",
                "position": 1,
                "duration":1
@@ -251,7 +255,7 @@
                "duration":2
             },
             {
-               "characterName": "Dolores",
+               "characterName": "Toñi",
                "text":"No no pero...",
                "position": 1,
                "duration":2
@@ -263,7 +267,7 @@
                "duration":5
             },
             {
-               "characterName": "Dolores",
+               "characterName": "Toñi",
                "text":"Tienes razón hijo, vaya con dios.",
                "position": 1,
                "duration":3
@@ -272,7 +276,7 @@
       },
       {
          "key":"1_GC_F",
-         "audioPath":"Gc_y_falangista",
+         "audioPath":"Gc y falangista",
          "subtitles":[
             {
                "characterName": "Cabo Menendez",
@@ -284,7 +288,7 @@
                "characterName": "Falangista",
                "text":"Bueno, muerto el perro se acabó la rabia jajaja.",
                "position": -1,
-               "duration":3
+               "duration":4
             },
             {
                "characterName": "Cabo Menendez",
@@ -308,13 +312,26 @@
                "characterName": "Cabo Menendez",
                "text":"Tienes razón, solo tomamos un poco de café con ella jajaja.",
                "position": 1,
-               "duration":3
+               "duration":5
+            },
+            {
+               "characterName": "Cabo Menendez",
+               "text":"Pues se quedó el sótano del ayuntamiento hecho un asco...",
+               "position": 1,
+               "duration":5
+            },
+            {
+               "characterName": "Cabo Menendez",
+               "text":"Dile a tu primo que se pase a limpiar. Dejare abierta la puerta a las 9",
+               "hint":"Van a limpiar el sótano del ayuntamiento a las 21:00",
+               "position": 1,
+               "duration":5
             }
          ]
       },
       {
          "key":"2_borrachos",
-         "audioPath":"Borrachos_a_las_cuatro",
+         "audioPath":"Borrachos a las cuatro",
          "subtitles":[
             {
                "characterName": "Borrachos",
@@ -379,14 +396,14 @@
          ]
       },
       {
-         "key":"1_Epifanio-Teresa",
-         "audioPath":"todo",
+         "key":"1_Epifanio_Teresa",
+         "audioPath":"Epifanio_y_teresa",
          "subtitles":[
             {
                "characterName": "Discusion",
                "text":"No podemos retrasarlo más, Teresa. Debería ser hoy.",
                "position": 1,
-               "duration":3
+               "duration":4
             },
             {
                "characterName": "Discusion",
@@ -398,47 +415,48 @@
                "characterName": "Discusion",
                "text":"A mí me da igual lo que le pase a cualquiera salvo a ti.",
                "position": 1,
-               "duration":3
+               "duration":4
             },
             {
                "characterName": "Discusion",
                "text":"Epifanio…",
                "position": -1,
-               "duration":3
+               "duration":1
             },
             {
                "characterName": "Discusion",
                "text":"Voy a preparar los últimos detalles, hoy Paco me tiene preparados los pasaportes falsos.",
                "position": 1,
-               "duration":3
+               "duration":5
             },
             {
                "characterName": "Discusion",
                "text":"Nos vemos al alba detrás de la iglesia, ¿vale?",
+               "hint":"Epifanio y Teresa quedan para huir al alba detrás de la Iglesia",
                "position": 1,
-               "duration":3
+               "duration":2
             },
             {
                "characterName": "Discusion",
                "text":"Está bien. Voy a preparar víveres.",
                "position": -1,
-               "duration":3
+               "duration":4
             }
          ]
       },
       {
          "key":"12_borracho",
-         "audioPath":"todo",
+         "audioPath":"Borracho_solo",
          "subtitles":[
             {
                "characterName": "Borracho",
                "text":"Chato mío de vino, aquí estamos otra vez tú y yo solos.",
                "position": 1,
-               "duration":3
+               "duration":5
             },
             {
                "characterName": "Borracho",
-               "text":"Quedé con el resto al salir de la misa, y mira qué desplante.",
+               "text":"Habíamos quedado al salir de la misa, y mira qué desplante.",
                "position": 1,
                "duration":3
             },
@@ -446,7 +464,7 @@
                "characterName": "Borracho",
                "text":"Cada vez hay menos compromiso en este pueblo con lo del beber",
                "position": 1,
-               "duration":3
+               "duration":5
             },
             {
                "characterName": "Borracho",
@@ -457,12 +475,7 @@
             {
                "characterName": "Borracho",
                "text":"Ni el hijo de la Inés ha venido, que me suele acompañar al primer trago.",
-               "position": 1,
-               "duration":3
-            },
-            {
-               "characterName": "Borracho",
-               "text":"Le espero una hora más y si no... me resignaré a beber solo.",
+               "hint":"Después de misa los trabajadores suelen ir al bar a tomar un trago.",
                "position": 1,
                "duration":3
             }
@@ -470,7 +483,7 @@
       },
       {
          "key":"6_espera",
-         "audioPath":"todo",
+         "audioPath":"Epifanio_solo",
          "subtitles":[
             {
                "characterName": "Epifanio",
@@ -486,23 +499,18 @@
             },
             {
                "characterName": "Epifanio",
-               "text":"Espero que ese chasquido que vino del ayuntamiento hace un rato...",
+               "text":"Espero que ese chasquido que vino del ayuntamiento hace un rato no fuese un disparo...",
+               "hint":"A las 5:00 Epifanio oyó un disparo en el ayuntamiento.",
                "position": 1,
-               "duration":3
-            },
-            {
-               "characterName": "Epifanio",
-               "text":"no fuese un disparo...",
-               "position": 1,
-               "duration":3
+               "duration":6
             },
             {
                "characterName": "Epifanio",
                "text":"Ay, qué voy a hacer yo sin ti…",
                "position": 1,
-               "duration":3
+               "duration":4
             }
         ]
-      }
+     }
    ]
 }
