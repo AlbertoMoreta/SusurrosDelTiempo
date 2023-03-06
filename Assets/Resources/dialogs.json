@@ -159,7 +159,7 @@
             {
                "characterName": "Borrachos",
                "text":"Esta tarde a las 7 se vuelven a ir para seguir trabajando.",
-               "hint":"A las 19:00 Epifanio se va a trabajar.",
+               "hint":"A las 19:00 Epifanio se vuelve a ir al campo a trabajar.",
                "position": -1,
                "duration":4
             },
@@ -200,7 +200,7 @@
          "audioPath":"Señora gc",
          "subtitles":[
             {
-               "characterName": "Dolores",
+               "characterName": "Toñi",
                "text":"Buenos días Cabo Menendez.",
                "position": 1,
                "duration":2
@@ -212,13 +212,13 @@
                "duration":2
             },
             {
-               "characterName": "Dolores",
+               "characterName": "Toñi",
                "text":"Todo bien, hijo. Aunque quería preguntarte sobre la maestra.",
                "position": 1,
                "duration":4
             },
             {
-               "characterName": "Dolores",
+               "characterName": "Toñi",
                "text":"Hoy no asistió a la escuela",
                "position": 1,
                "duration":2
@@ -230,7 +230,7 @@
                "duration":1
             },
             {
-               "characterName": "Dolores",
+               "characterName": "Toñi",
                "text":"¡Pero ayer estaba perfectamente!",
                "position": 1,
                "duration":2
@@ -242,7 +242,7 @@
                "duration":2
             },
             {
-               "characterName": "Dolores",
+               "characterName": "Toñi",
                "text":"Puede ser pero...",
                "position": 1,
                "duration":1
@@ -254,7 +254,7 @@
                "duration":2
             },
             {
-               "characterName": "Dolores",
+               "characterName": "Toñi",
                "text":"No no pero...",
                "position": 1,
                "duration":2
@@ -266,7 +266,7 @@
                "duration":5
             },
             {
-               "characterName": "Dolores",
+               "characterName": "Toñi",
                "text":"Tienes razón hijo, vaya con dios.",
                "position": 1,
                "duration":3
@@ -284,7 +284,7 @@
                "duration":3
             },
             {
-               "characterName": "Falangista Fausto",
+               "characterName": "Falangista",
                "text":"Bueno, muerto el perro se acabó la rabia jajaja.",
                "position": -1,
                "duration":4
@@ -296,13 +296,13 @@
                "duration":3
             },
             {
-               "characterName": "Falangista Fausto",
+               "characterName": "Falangista",
                "text":"¿Te crees que van a sospechar de nosotros? ",
                "position": -1,
                "duration":3
             },
             {
-               "characterName": "Falangista Fausto",
+               "characterName": "Falangista",
                "text":"Solo estamos hablando del 'café'.",
                "position": -1,
                "duration":3
@@ -320,43 +320,43 @@
          "audioPath":"Borrachos a las cuatro",
          "subtitles":[
             {
-               "characterName": "Alfredo",
+               "characterName": "Borrachos",
                "text":"Yo no quiero pensar mal de Paco... ",
                "position": 1,
                "duration":3
             },
             {
-               "characterName": "Alfredo",
+               "characterName": "Borrachos",
                "text":"Pero últimamente pasa demasiado tiempo con la de Epifanio.",
                "position": 1,
                "duration":4
             },
             {
-               "characterName": "Evaristo",
+               "characterName": "Borrachos",
                "text":"Es de buen saber que ahí algo pasa, pobre Epifanio.",
                "position": -1,
                "duration":4
             },
             {
-               "characterName": "Evaristo",
+               "characterName": "Borrachos",
                "text":"Creo que se han fugado.",
                "position": -1,
                "duration":2
             },
             {
-               "characterName": "Alfredo",
+               "characterName": "Borrachos",
                "text":"¿¿¿Qué???",
                "position": 1,
                "duration":2
             },
             {
-               "characterName": "Evaristo",
+               "characterName": "Borrachos",
                "text":"¡Sí! Piensalo, no se les ha vuelto a ver a ninguno de los dos desde ayer.",
                "position": -1,
                "duration":4
             },
             {
-               "characterName": "Alfredo",
+               "characterName": "Borrachos",
                "text":"No me puedo creer, que pase esto...",
                "position": 1,
                "duration":4
@@ -382,47 +382,47 @@
          ]
       },
       {
-         "key":"1_Epifanio-Teresa",
+         "key":"1_Epifanio_Teresa",
          "audioPath":"Epifanio_y_teresa",
          "subtitles":[
             {
-               "characterName": "Epifanio",
+               "characterName": "Discusion",
                "text":"No podemos retrasarlo más, Teresa. Debería ser hoy.",
                "position": 1,
                "duration":4
             },
             {
-               "characterName": "Teresa",
+               "characterName": "Discusion",
                "text":"Me da igual lo que le pase a este pueblo, pero no quiero dejar a los niños.",
                "position": -1,
                "duration":3
             },
             {
-               "characterName": "Epifanio",
+               "characterName": "Discusion",
                "text":"A mí me da igual lo que le pase a cualquiera salvo a ti.",
                "position": 1,
                "duration":4
             },
             {
-               "characterName": "Teresa",
+               "characterName": "Discusion",
                "text":"Epifanio…",
                "position": -1,
                "duration":1
             },
             {
-               "characterName": "Epifanio",
+               "characterName": "Discusion",
                "text":"Voy a preparar los últimos detalles, hoy Paco me tiene preparados los pasaportes falsos.",
                "position": 1,
                "duration":5
             },
             {
-               "characterName": "Epifanio",
+               "characterName": "Discusion",
                "text":"Nos vemos al alba detrás de la iglesia, ¿vale?",
                "position": 1,
                "duration":2
             },
             {
-               "characterName": "Teresa",
+               "characterName": "Discusion",
                "text":"Está bien. Voy a preparar víveres.",
                "position": -1,
                "duration":4
