@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene_concept3d.unity
+    guid: 8c4e76bf423648448aff3bec1c7264cf
+  - enabled: 1
+    path: Assets/Scenes/CutScene_final.unity
+    guid: 103fccd1829bbdf42a2b5d9576be07d0
   m_configObjects: {}

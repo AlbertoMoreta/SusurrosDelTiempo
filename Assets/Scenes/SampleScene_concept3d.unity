@@ -448,6 +448,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1143184007}
+  - {fileID: 480336279}
   - {fileID: 529334335}
   m_Father: {fileID: 369864732}
   m_RootOrder: 3
@@ -1969,6 +1970,64 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72a8abc9dfdd0f245bdf88f5ab76b55f, type: 3}
+--- !u!1 &480336278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 480336279}
+  - component: {fileID: 480336281}
+  - component: {fileID: 480336280}
+  m_Layer: 0
+  m_Name: CutSceneTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &480336279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480336278}
+  m_LocalRotation: {x: -0, y: -0.44449067, z: -0, w: 0.8957834}
+  m_LocalPosition: {x: 26.796, y: -0.401, z: 3.89}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 92023442}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -52.782, z: 0}
+--- !u!114 &480336280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480336278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c987f90d08ccd9b4c8d09c4d95bf1cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &480336281
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480336278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.758428, y: 1.5729553, z: 8.514569}
+  m_Center: {x: -1.8717836, y: -0.7916332, z: -1.3572559}
 --- !u!1001 &515321393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2227,7 +2286,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 92023442}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &529334336
 MeshCollider:
