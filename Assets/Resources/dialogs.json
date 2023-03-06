@@ -55,9 +55,15 @@
             },
             {
                "characterName": "Señoras",
-               "text":"Me contó que de primera mano sabía que tenían jaleos en casa, pero no soy yo de contar cosas de otras personas, Dios me guarde.",
+               "text":"Me contó que de primera mano sabía que tenían jaleos en casa, pero no soy yo de contar cosas de otras personas,",
                "position": 1,
                "duration":9
+            },
+            {
+               "characterName": "Señoras",
+               "text":"Dios me guarde.",
+               "position": 1,
+               "duration":2
             }
          ]
       },
@@ -489,13 +495,13 @@
                "characterName": "Epifanio",
                "text":"Mi Teresa, ¿dónde estás?",
                "position": 1,
-               "duration":3
+               "duration":5
             },
             {
                "characterName": "Epifanio",
                "text":"Con lo puntual que tú eres siempre…",
                "position": 1,
-               "duration":3
+               "duration":4
             },
             {
                "characterName": "Epifanio",
@@ -506,9 +512,75 @@
             },
             {
                "characterName": "Epifanio",
-               "text":"Ay, qué voy a hacer yo sin ti…",
+               "text":"Ay, qué haría yo sin ti…",
                "position": 1,
                "duration":4
+            }
+        ]
+      },
+      {
+         "key":"1_Final_GC_y_falangista",
+         "audioPath":"Final_GC_y_falangista",
+         "subtitles":[
+            {
+               "characterName": "Cabo Menendez",
+               "text":"¿Eres fiel a la república? ¿Reniegas de Dios y la Biblia? Habla!",
+               "position": 1,
+               "duration":5
+            },
+            {
+               "characterName": "Falangista",
+               "text":"¿Qué, no piensas soltar prenda, puta roja de mierda?",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Falangista",
+               "text":"Lo único que vas a conseguir es alargar tu sufrimiento.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Cabo Menendez",
+               "text":"¿Quién era el enlace del sindicato? ¿Está tu marido en el ajo?",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Falangista",
+               "text":"¿No ves que no piensa hablar? Métele ya un tiro.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Falangista",
+               "text":"Mírala, se cree que está siendo una heroína.",
+               "position": 1,
+               "duration":3
+            },
+            {
+               "characterName": "Falangista",
+               "text":"¿Pues sabes qué? Vas a morir esta noche. Y vas a acabar en una cuneta. Y nadie recordará tu nombre.",
+               "position": 1,
+               "duration":7
+            },
+        ]
+      },
+      {
+         "key":"2_Final_GC_y_falangista",
+         "audioPath":"Gc_final",
+         "subtitles":[
+            {
+               "characterName": "Cabo Menendez",
+               "text":"¿Quién más del pueblo tiene pensado huir? Última oportunidad.",
+               "position": 1,
+               "duration":6
+            },
+            {
+               "characterName": "Cabo Menendez",
+               "text":"Tú te lo has buscado.",
+               "position": 1,
+               "duration":5
             }
         ]
       }
