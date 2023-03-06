@@ -583,6 +583,181 @@
                "duration":5
             }
         ]
+      },
+      {
+         "key":"1_gato",
+         "audioPath":"gato",
+         "subtitles":[
+            {
+               "characterName": "Gato",
+               "text":"Apúntate a una jam. Será divertido, decían...",
+               "position": 1,
+               "duration":6
+            }
+        ]
+      },
+      {
+         "key":"2_gato",
+         "audioPath":"gato",
+         "subtitles":[
+            {
+               "characterName": "Gato",
+               "text":"Dormir está sobrevalorado.",
+               "position": 1,
+               "duration":3
+            }
+        ]
+      },
+      {
+         "key":"3_gato",
+         "audioPath":"gato",
+         "subtitles":[
+            {
+               "characterName": "Gato",
+               "text":"¡Abajo el capitalismo!",
+               "position": 1,
+               "duration":3
+            }
+        ]
+      },
+      {
+         "key":"1_creditos",
+         "audioPath":"",
+         "subtitles":[
+            {
+               "characterName": "Charo",
+               "text":"¡Vaya juego más bonico han hecho los chiquillos!",
+               "position": -1,
+               "duration":5
+            },
+            {
+               "characterName": "Conchi",
+               "text":"Sí, sí. ¡A mi me ha gustado mucho!",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Conchi",
+               "text":"¿Te has fijado que guapas estamos?",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Charo",
+               "text":"Es que Mario tiene unas manos...",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Charo",
+               "text":"Mira que solera tiene el pueblo que nos ha construido.",
+               "position": -1,
+               "duration":5
+            },
+            {
+               "characterName": "Conchi",
+               "text":"Bueno, y la peazo artista que es Say",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Conchi",
+               "text":"hasta a un borracho lo dibuja con gracia.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Charo",
+               "text":"¿Y qué me dices de las voces?",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Conchi",
+               "text":"Que bien hace Raquel de abuela.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Charo",
+               "text":"Bueno, y que Lucía es una directora de doblaje estupenda",
+               "position": -1,
+               "duration":7
+            },
+            {
+               "characterName": "Conchi",
+               "text":"¡Hablando de sonido!",
+               "position": 1,
+               "duration":2
+            },
+            {
+               "characterName": "Conchi",
+               "text":"Que duende tiene Miguel tocando la guitarra.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Charo",
+               "text":"Ay niña, ¡y qué historia!",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Charo",
+               "text":"Joseba ha escrito una narrativa que deja sin aliento.",
+               "position": -1,
+               "duration":7
+            },
+            {
+               "characterName": "Conchi",
+               "text":"Y menos mal que teníamos la agenda que ha hecho Marcos.",
+               "position": 1,
+               "duration":6
+            },
+            {
+               "characterName": "Conchi",
+               "text":"Si no, no sabríamos ni que hora es.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Charo",
+               "text":"Porque vaya cacao de horas, pa'lante y pa'trás",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Conchi",
+               "text":"Cacao el que ha debido ser programar esto.",
+               "position": 1,
+               "duration":5
+            },
+            {
+               "characterName": "Conchi",
+               "text":"Alberto ha hecho unas mecánicas espectaculares.",
+               "position": 1,
+               "duration":5
+            },
+            {
+               "characterName": "Charo",
+               "text":"Y gracias a La Ínsula Coworking por patrocinar el crunch de anoche.",
+               "position": -1,
+               "duration":8
+            },
+            {
+               "characterName": "Conchi",
+               "text":"Alberto ha hecho unas mecánicas espectaculares.",
+               "position": 1,
+               "duration":5
+            },
+            {
+               "characterName": "Charo",
+               "text":"Y nada más. ¡GRACIAS POR JUGAR!",
+               "position": -1,
+               "duration":4
+            }
+        ]
       }
+      
    ]
 }
