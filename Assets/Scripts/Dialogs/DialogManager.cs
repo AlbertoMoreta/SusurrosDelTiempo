@@ -89,7 +89,7 @@ public class DialogManager : MonoBehaviour {
                     break;
                 }
             }
-            dialogBox.transform.position = character.transform.position + new Vector3(xOffset, 0.5f, 0);
+            dialogBox.transform.position = character.transform.position + new Vector3(xOffset, 0.7f, 0);
             _subsTextBox.text = sub.text;
             yield return new WaitForSeconds(sub.duration);
         }
