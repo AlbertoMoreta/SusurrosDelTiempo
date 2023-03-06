@@ -14,6 +14,7 @@ public class DialogManager : MonoBehaviour {
     
     public GameObject dialogBox;
     public float dialogBoxOffset = 1f;
+    public TextMeshProUGUI diaryNotes;
     private TextMeshProUGUI _subsTextBox;
     
     private Transform _originalParent;
@@ -91,6 +92,9 @@ public class DialogManager : MonoBehaviour {
             }
             dialogBox.transform.position = character.transform.position + new Vector3(xOffset, 0.7f, 0);
             _subsTextBox.text = sub.text;
+            // if(sub.hint){
+                diaryNotes.text += "- " + "hola\n";
+            // }
             yield return new WaitForSeconds(sub.duration);
         }
         _subsTextBox.text = "";

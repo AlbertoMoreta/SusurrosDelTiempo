@@ -4,6 +4,7 @@ using UnityEngine;
 public class UIManager : MonoBehaviour {
     [SerializeField]
     public View[] views;
+    private bool _isDiaryDisplaying = false;
     
     public static UIManager Instance {
         get; private set;
@@ -21,6 +22,17 @@ public class UIManager : MonoBehaviour {
        for (int i = 0; i < Instance.views.Length; i++) {
             Instance.views[i].Initialize();
         } 
+    }
+
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.E)) {
+            if(_isDiaryDisplaying) {
+                UIManager.Show<DiaryView>();
+            } else {
+                UIManager.Hide<DiaryView>();
+            }
+            _isDiaryDisplaying = !_isDiaryDisplaying;
+        }
     }
 
 
