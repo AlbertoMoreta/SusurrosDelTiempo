@@ -49,7 +49,7 @@
             {
                "characterName": "Señoras",
                "text":"Hace una hora me crucé con la Toñi donde Fermín y, chica...",
-               "hint":"A las 11:00 Señoras hablando sobre jaleos en casa de la maestra.",
+               "hint":"A las 11:00 Señoras hablando sobre jaleos donde Fermín.",
                "position": 1,
                "duration":5
             },
@@ -93,6 +93,7 @@
             {
                "characterName": "Toñi",
                "text":"Total, que volviendo a eso de la una, pasé por delante de su casa y estaban teniendo una bronca de muy señor mío.",
+               "hint":"A la 1:00 el matrimonio tenía una bronca en su casa.",
                "position": 1,
                "duration":8
             },
@@ -312,6 +313,19 @@
                "text":"Tienes razón, solo tomamos un poco de café con ella jajaja.",
                "position": 1,
                "duration":5
+            },
+            {
+               "characterName": "Cabo Menendez",
+               "text":"Pues se quedó el sótano del ayuntamiento hecho un asco...",
+               "position": 1,
+               "duration":5
+            },
+            {
+               "characterName": "Cabo Menendez",
+               "text":"Dile a tu primo que se pase a limpiar. Dejare abierta la puerta a las 9",
+               "hint":"Van a limpiar el sótano del ayuntamiento a las 21:00",
+               "position": 1,
+               "duration":5
             }
          ]
       },
@@ -418,6 +432,7 @@
             {
                "characterName": "Discusion",
                "text":"Nos vemos al alba detrás de la iglesia, ¿vale?",
+               "hint":"Epifanio y Teresa quedan para huir al alba detrás de la Iglesia",
                "position": 1,
                "duration":2
             },
@@ -460,6 +475,7 @@
             {
                "characterName": "Borracho",
                "text":"Ni el hijo de la Inés ha venido, que me suele acompañar al primer trago.",
+               "hint":"Después de misa los trabajadores suelen ir al bar a tomar un trago.",
                "position": 1,
                "duration":3
             }
@@ -484,6 +500,7 @@
             {
                "characterName": "Epifanio",
                "text":"Espero que ese chasquido que vino del ayuntamiento hace un rato no fuese un disparo...",
+               "hint":"A las 5:00 Epifanio oyó un disparo en el ayuntamiento.",
                "position": 1,
                "duration":6
             },
