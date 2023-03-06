@@ -523,7 +523,7 @@
          "audioPath":"Final_GC_y_falangista",
          "subtitles":[
             {
-               "characterName": "Cabo Menendez",
+               "characterName": "Cabo Menendez2",
                "text":"¿Eres fiel a la república? ¿Reniegas de Dios y la Biblia? Habla!",
                "position": 1,
                "duration":5
@@ -541,7 +541,7 @@
                "duration":4
             },
             {
-               "characterName": "Cabo Menendez",
+               "characterName": "Cabo Menendez2",
                "text":"¿Quién era el enlace del sindicato? ¿Está tu marido en el ajo?",
                "position": 1,
                "duration":3
@@ -571,13 +571,13 @@
          "audioPath":"Gc_final",
          "subtitles":[
             {
-               "characterName": "Cabo Menendez",
+               "characterName": "Cabo Menendez3",
                "text":"¿Quién más del pueblo tiene pensado huir? Última oportunidad.",
                "position": 1,
                "duration":6
             },
             {
-               "characterName": "Cabo Menendez",
+               "characterName": "Cabo Menendez3",
                "text":"Tú te lo has buscado.",
                "position": 1,
                "duration":5
