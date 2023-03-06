@@ -67,73 +67,73 @@
             {
                "characterName": "Dolores",
                "text":"¿Te enteraste de que no aparece la maestra?",
-               "position": 1,
+               "position": -1,
                "duration":3
             },
             {
                "characterName": "Dolores",
                "text":"Pues me acerqué al ayuntamiento a preguntar, estuve hablando a las 9 con el cabo nuevo y le noté tenso.",
-               "position": 1,
+               "position": -1,
                "duration":7
             },
             {
                "characterName": "Dolores",
                "text":"Algo raro ha pasado...",
-               "position": 1,
+               "position": -1,
                "duration":2
             },
             {
                "characterName": "Toñi",
                "text":"Pues ayer salí a dar un paseo largo a que me diera la fresca y se me alargó un poco de más. ¡Qué luna había, hija!",
-               "position": -1,
+               "position": 1,
                "duration":8
             },
             {
                "characterName": "Toñi",
                "text":"Total, que volviendo a eso de la una, pasé por delante de su casa y estaban teniendo una bronca de muy señor mío.",
-               "position": -1,
+               "position": 1,
                "duration":8
             },
             {
                "characterName": "Dolores",
                "text":"Si es que esa mujer siempre ha sido un caso.",
-               "position": 1,
+               "position": -1,
                "duration":3
             },
             {
                "characterName": "Toñi",
                "text":"Ay la pobre Inés, el disgusto que se llevó la pobre…",
-               "position": -1,
+               "position": 1,
                "duration":4
             },
             {
                "characterName": "Toñi",
-               "text":"Cuando el hijo dijo que se casaba con semejante elementa .              ",
-               "position": -1,
+               "text":"Cuando el hijo dijo que se casaba con semejante elementa.",
+               "position": 1,
                "duration":4
             },
             {
                "characterName": "Dolores",
                "text":"No sé quién llevará los pantalones en esa casa.",
-               "position": 1,
+               "position": -1,
                "duration":3
             },
             {
                "characterName": "Toñi",
                "text":"¿Te enteraste que quitó el crucifijo de su clase?",
-               "position": -1,
+               "position": 1,
                "duration":4
             },
             {
                "characterName": "Dolores",
                "text":"Al padre Andrés no le hizo pizca de gracia…",
-               "position": 1,
+               "position": -1,
                "duration":3
             },
             {
                "characterName": "Dolores",
                "text":"Por no hablar de que normalmente va hecha unos zarrios…",
-               "position": 1,
+               "position": -1,
                "duration":5
             }
          ]
