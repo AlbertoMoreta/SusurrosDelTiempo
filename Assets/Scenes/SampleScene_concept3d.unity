@@ -434,7 +434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &92023442
 Transform:
   m_ObjectHideFlags: 0
@@ -1125,8 +1125,8 @@ Transform:
   - {fileID: 1376088930}
   - {fileID: 1780111839}
   - {fileID: 288851680}
-  - {fileID: 1872402783}
   - {fileID: 380425962}
+  - {fileID: 1872402783}
   - {fileID: 1624021487}
   - {fileID: 1992026860}
   - {fileID: 919478778}
@@ -1232,7 +1232,7 @@ Transform:
   m_Children:
   - {fileID: 328075462}
   m_Father: {fileID: 369864732}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &395557281
 GameObject:
@@ -5989,7 +5989,7 @@ Transform:
   - {fileID: 1690912811}
   - {fileID: 1846288680}
   m_Father: {fileID: 369864732}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1881650032 stripped
 Transform:
@@ -6421,7 +6421,7 @@ PrefabInstance:
       objectReference: {fileID: 1992026859}
     - target: {fileID: 3041894777930558331, guid: 32f77f6e3119c9f4194513f90cc3b4f7, type: 3}
       propertyPath: times.Array.size
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3041894777930558331, guid: 32f77f6e3119c9f4194513f90cc3b4f7, type: 3}
       propertyPath: times.Array.data[0]
@@ -6470,7 +6470,7 @@ PrefabInstance:
     - target: {fileID: 3041894777930558331, guid: 32f77f6e3119c9f4194513f90cc3b4f7, type: 3}
       propertyPath: times.Array.data[11]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1624021486}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32f77f6e3119c9f4194513f90cc3b4f7, type: 3}
 --- !u!4 &1943044817 stripped
