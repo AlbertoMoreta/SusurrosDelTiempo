@@ -94,7 +94,7 @@ public class DialogManager : MonoBehaviour {
             }
             dialogBox.transform.position = character.transform.position + new Vector3(xOffset, dialogBoxHeight, 0);
             _subsTextBox.text = sub.text;
-            if(string.IsNullOrEmpty(sub.hint)){
+            if(!string.IsNullOrEmpty(sub.hint)){
                 diaryNotes.text += "- " + sub.hint + "\n";
             }
             yield return new WaitForSeconds(sub.duration);
