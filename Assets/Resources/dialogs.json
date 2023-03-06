@@ -2,7 +2,7 @@
    "dialogLines":[
       {
          "key":"1_senoras_plaza",
-         "audioPath": "Mujeres a las 12_00",
+         "audioPath": "Mujeres_a_las_12_00",
          "subtitles":[
             {
                "characterName": "Señoras",
@@ -63,7 +63,7 @@
       },
       {
          "key":"2_senoras_plaza",
-         "audioPath":"Mujeres a las 11_00",
+         "audioPath":"Mujeres_a_las_11_00",
          "subtitles":[
             {
                "characterName": "Dolores",
@@ -143,7 +143,7 @@
       },
       {
          "key":"1_borrachos",
-         "audioPath":"Borrachos a la una",
+         "audioPath":"Borrachos_a_la_una",
          "subtitles":[
             {
                "characterName": "Borrachos",
@@ -198,7 +198,7 @@
       },
       {
          "key":"1_GC_senora1",
-         "audioPath":"Señora gc",
+         "audioPath":"Señora_gc",
          "subtitles":[
             {
                "characterName": "Toñi",
@@ -276,7 +276,7 @@
       },
       {
          "key":"1_GC_F",
-         "audioPath":"Gc y falangista",
+         "audioPath":"GC_Falangista",
          "subtitles":[
             {
                "characterName": "Cabo Menendez",
@@ -331,7 +331,7 @@
       },
       {
          "key":"2_borrachos",
-         "audioPath":"Borrachos a las cuatro",
+         "audioPath":"Borrachos_a_las_cuatro",
          "subtitles":[
             {
                "characterName": "Borrachos",
@@ -511,6 +511,6 @@
                "duration":4
             }
         ]
-     }
+      }
    ]
 }
