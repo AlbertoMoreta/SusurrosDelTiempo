@@ -19,10 +19,8 @@ public class GoToFinalCutscene : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Hola!");
         if (other.tag.Equals("Player"))
         {
-            Debug.Log("Siiii");
             SceneManager.LoadScene(1);
         }
     }

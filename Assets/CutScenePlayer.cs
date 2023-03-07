@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class CutScenePlayer : MonoBehaviour
 {
 
@@ -53,5 +53,11 @@ public class CutScenePlayer : MonoBehaviour
     void showMessageAndEnd()
     {
         message.active = true;
+        IEnumerator WaitForMessage()
+        {
+            yield return new WaitForSeconds(10f);// Wait a bit
+            SceneManager.LoadScene(2);
+        }
+        StartCoroutine(WaitForMessage());
     }
 }

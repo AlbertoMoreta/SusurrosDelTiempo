@@ -775,13 +775,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "M\xE1s de 130.000 personas fueron ejecutadas en los primeros meses tras
-    el golpe de estado de 1936. La violencia en la retaguardia sublevada se ceb\xF3
-    con los militantes o con simples simpatizantes de partidos de izquierdas y organizaciones
-    obreras, as\xED como con determinados colectivos especialmente odiados por los
-    fascistas como los maestros.\n\nLas mujeres, adem\xE1s de ser violadas antes
-    de su ejecuci\xF3n, sufrieron vejaciones como rapadas de pelo, ingesta de aceite
-    de ricino y mutilaciones.\n\nQue nunca caiga en el olvido."
+  m_text: "M\xE1s de 130.000 personas fueron ejecutadas por el franquismo en los
+    primeros meses tras el golpe de estado de 1936. La violencia en la retaguardia
+    sublevada se ceb\xF3 con los militantes o con simples simpatizantes de partidos
+    de izquierdas y organizaciones obreras, as\xED como con determinados colectivos
+    especialmente odiados por los fascistas como los maestros.\n\nLas mujeres, adem\xE1s
+    de ser violadas antes de su ejecuci\xF3n, sufrieron vejaciones como rapadas de
+    pelo, ingesta de aceite de ricino y mutilaciones.\n\nQue nunca caiga en el olvido."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b7e09dbd52418164ea5fd280c005ce79, type: 2}
   m_sharedMaterial: {fileID: 6588086453046314990, guid: b7e09dbd52418164ea5fd280c005ce79, type: 2}
