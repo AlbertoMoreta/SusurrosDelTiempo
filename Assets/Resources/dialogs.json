@@ -80,7 +80,7 @@
             {
                "characterName": "Dolores",
                "text":"Pues me acerqué al ayuntamiento a preguntar, estuve hablando a las 9 con el cabo nuevo y le noté tenso.",
-               "hint":"A las 9:00 señora hablando con el cabo",
+               "hint":"A las 9:00 señora hablando con el cabo en la puerta del ayuntamiento.",
                "position": 1,
                "duration":7
             },
@@ -99,7 +99,7 @@
             {
                "characterName": "Toñi",
                "text":"Total, que volviendo a eso de la una, pasé por delante de su casa y estaban teniendo una bronca de muy señor mío.",
-               "hint":"A la 1:00 el matrimonio tenía una bronca en su casa.",
+               "hint":"A la 1:00, la maestra y su marido estaban teniendo una bronca en su casa.",
                "position": 1,
                "duration":8
             },
@@ -389,7 +389,7 @@
          "subtitles":[
             {
                "characterName": "Placido",
-               "text":"¡Carmen abre la puerta!¡vamos!",
+               "text":"¡Carmen abre la puerta! ¡Vamos!",
                "position": 1,
                "duration":2
             },

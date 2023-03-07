@@ -81,7 +81,7 @@ public class ClockMovement : MonoBehaviour {
         if (_rotateMinutes){
             var step = Quaternion.Euler(0, 3f, 0);
             minutesHandle.localRotation *= step;
-            Debug.Log("Local rotation y: " + Math.Abs(minutesHandle.localRotation.y)); 
+            // Debug.Log("Local rotation y: " + Math.Abs(minutesHandle.localRotation.y)); 
             if (Math.Abs(minutesHandle.localRotation.y) < 0.02) {
                 minutesHandle.localRotation = Quaternion.Euler(new Vector3(0,0,0));
                 _rotateMinutes = false;

@@ -12,12 +12,7 @@ public class DialogTrigger : MonoBehaviour {
         _collider = gameObject.GetComponent<SphereCollider>();
     }
 
-    // Update is called once per frame
-    void Update() {
-
-    }
-
-    private void OnTriggerEnter(Collider other) {
+    private void OnTriggerStay(Collider other) {
         if(other.tag.Equals("Player") && dialogKey != null) {
             DialogManager.Instance.StartDialog(dialogKey);
         }

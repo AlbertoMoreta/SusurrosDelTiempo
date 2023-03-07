@@ -9,7 +9,7 @@ public class TimeTravelManager : MonoBehaviour {
     public GameObject defaultTime;
     public GameObject[] times;
 
-    private int _currentHour = 5;    
+    private int _currentHour;    
     private GameObject _currentTime;
 
     private GameObject _sun;
@@ -35,7 +35,6 @@ public class TimeTravelManager : MonoBehaviour {
         _sun = GameObject.Find("Sky");
         _currentTime = defaultTime;
         hour = _currentHour;
-        TimeTravel(hour);
     }
 
     // Update is called once per frame
@@ -57,6 +56,7 @@ public class TimeTravelManager : MonoBehaviour {
 
     private void TimeTravel(int hour){
         Debug.Log("Time traveling to: " + hour);
+        DialogManager.Instance.StopDialog(); // Stop ongoing dialog
         _currentTime.SetActive(false);
 
         var time = times.FirstOrDefault(t => t.name == hour.ToString());

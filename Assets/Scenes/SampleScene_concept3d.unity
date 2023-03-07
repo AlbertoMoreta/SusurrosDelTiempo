@@ -743,8 +743,8 @@ MonoBehaviour:
       colorBlindnessType: 0
       colorBlindnessStrength: 1
   m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
+  m_ShowToolkit: 1
+  m_ShowCustomSorter: 1
   breakBeforeColorGrading: 0
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
@@ -4740,6 +4740,18 @@ PrefabInstance:
       propertyPath: dialogKey
       value: 1_Epifanio_Teresa
       objectReference: {fileID: 0}
+    - target: {fileID: 6286861697407702341, guid: 524830971b6546a4d843c5fa75a4b00c, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286861697407702341, guid: 524830971b6546a4d843c5fa75a4b00c, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286861697407702341, guid: 524830971b6546a4d843c5fa75a4b00c, type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6286861697407702343, guid: 524830971b6546a4d843c5fa75a4b00c, type: 3}
       propertyPath: m_Name
       value: DialogTrigger
@@ -5510,7 +5522,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6286861697407702338, guid: 524830971b6546a4d843c5fa75a4b00c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.44
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6286861697407702338, guid: 524830971b6546a4d843c5fa75a4b00c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5547,6 +5559,18 @@ PrefabInstance:
     - target: {fileID: 6286861697407702340, guid: 524830971b6546a4d843c5fa75a4b00c, type: 3}
       propertyPath: dialogKey
       value: 1_senoras_plaza
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286861697407702341, guid: 524830971b6546a4d843c5fa75a4b00c, type: 3}
+      propertyPath: m_Radius
+      value: 2.7317016
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286861697407702341, guid: 524830971b6546a4d843c5fa75a4b00c, type: 3}
+      propertyPath: m_Center.x
+      value: 0.000000019866674
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286861697407702341, guid: 524830971b6546a4d843c5fa75a4b00c, type: 3}
+      propertyPath: m_Center.z
+      value: 8987.464
       objectReference: {fileID: 0}
     - target: {fileID: 6286861697407702343, guid: 524830971b6546a4d843c5fa75a4b00c, type: 3}
       propertyPath: m_Name
@@ -6529,7 +6553,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: eb4ddb68708a0bc4bad75d234c2f63d8, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5148817236446094103, guid: eb4ddb68708a0bc4bad75d234c2f63d8, type: 3}
       propertyPath: m_Layer

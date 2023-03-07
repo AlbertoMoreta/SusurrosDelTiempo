@@ -24,6 +24,8 @@ public class DialogManager : MonoBehaviour {
     private DialogCollection _dialogCollection;
     private AudioSource audioSource;
     private GameObject _background;
+    private Dialog _currentDialog;
+    private Coroutine _subtitlesCoroutine;
 
     public static DialogManager Instance {
         get; private set;
@@ -58,10 +60,10 @@ public class DialogManager : MonoBehaviour {
 
     // Play dialog: DialogManager.Instance.SendMessage("StartDialog", "dialog_key");
     public void StartDialog(string dialogKey) {
-        if(!audioSource.isPlaying && !dialogBox.activeSelf){
-            var selectedDialog = _dialogCollection.dialogLines.First(dialog => dialog.key == dialogKey);
-            PlayAudio(selectedDialog.audioPath);
-            StartCoroutine(DisplaySubtitles(selectedDialog.subtitles));
+        if(!audioSource.isPlaying && !dialogBox.activeSelf && !IsClockViewActive()){
+            _currentDialog = _dialogCollection.dialogLines.First(dialog => dialog.key == dialogKey);
+            PlayAudio(_currentDialog.audioPath);
+            _subtitlesCoroutine = StartCoroutine(DisplaySubtitles(_currentDialog.subtitles));
         }
     }
 
@@ -71,7 +73,7 @@ public class DialogManager : MonoBehaviour {
         audioSource.PlayOneShot(audioClip);
     }
 
-     private IEnumerator DisplaySubtitles(List<Subtitle> subtitles) {
+    private IEnumerator DisplaySubtitles(List<Subtitle> subtitles) {
         dialogBox.SetActive(true);
         Quaternion startingRotation = _background.transform.localRotation;
 
@@ -83,7 +85,7 @@ public class DialogManager : MonoBehaviour {
             switch(sub.position) {
                 case DIALOG_BOX_POSITIONS.RIGHT: {
                     xOffset = -dialogBoxOffset;
-                    _background.transform.localRotation = startingRotation;
+                    _background.transform.localRotation = Quaternion.Euler(-90, 0, 0);
                     break;
                 }
                 case DIALOG_BOX_POSITIONS.LEFT:{
@@ -94,16 +96,48 @@ public class DialogManager : MonoBehaviour {
             }
             dialogBox.transform.position = character.transform.position + new Vector3(xOffset, dialogBoxHeight, 0);
             _subsTextBox.text = sub.text;
-            if(!string.IsNullOrEmpty(sub.hint)){
+            if(!string.IsNullOrEmpty(sub.hint) && !HintUnlocked(sub.hint)){
                 diaryNotes.text += "- " + sub.hint + "\n";
             }
             yield return new WaitForSeconds(sub.duration);
         }
-        _subsTextBox.text = "";
-        _background.transform.localRotation = startingRotation;
-        dialogBox.transform.parent =_originalParent;
-        dialogBox.SetActive(false);
+        StopSubtitles();
+        
     }
 
+    private void StopSubtitles(){
+        Debug.Log("Stopping subtitles");
+        if(_subsTextBox != null) { _subsTextBox.text = ""; }
+        if(_background != null) {
+            _background.transform.localRotation = Quaternion.Euler(-90, 0, 0);
+        }   
+        dialogBox.transform.parent = _originalParent;
+        if(dialogBox != null){
+            dialogBox.SetActive(false);
+        }
+    }
+
+    public void StopDialog() {
+        if(dialogBox != null && dialogBox.activeSelf) {
+            if(audioSource != null && audioSource.isPlaying){
+                audioSource.Stop();
+            }
+            if(_currentDialog != null){
+                StopCoroutine(_subtitlesCoroutine);
+                _currentDialog = null;
+            }
+            StopSubtitles();
+        }
+        
+    }
+
+    private bool IsClockViewActive(){
+        var clockView =UIManager.GetView<ClockView>();
+        return clockView != null && clockView.isActiveAndEnabled;
+    }
+
+    private bool HintUnlocked(string hint){
+        return diaryNotes.text.ToUpper().Contains(hint.ToUpper());
+    }
 }
 
