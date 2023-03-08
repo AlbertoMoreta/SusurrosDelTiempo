@@ -741,15 +741,9 @@
             },
             {
                "characterName": "Charo",
-               "text":"Y gracias a La Ínsula Coworking por patrocinar el crunch de anoche.",
+               "text":"Gracias a La Ínsula Coworking por patrocinar el crunch de anoche.",
                "position": -1,
                "duration":8
-            },
-            {
-               "characterName": "Conchi",
-               "text":"Alberto ha hecho unas mecánicas espectaculares.",
-               "position": 1,
-               "duration":5
             },
             {
                "characterName": "Charo",
