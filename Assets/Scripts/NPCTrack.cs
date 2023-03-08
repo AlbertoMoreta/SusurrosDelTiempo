@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NPCTrack : MonoBehaviour {
+    
+    public Transform target;
     public bool trackXAxis;
     public bool trackYAxis;
     public bool trackZAxis;
@@ -10,12 +12,14 @@ public class NPCTrack : MonoBehaviour {
     void Start() { }
 
     void Update() {
-        if(Camera.main){
+        if(target){
 
-            var x = trackXAxis ? Camera.main.transform.position.x : transform.position.x;
-            var y = trackYAxis ? Camera.main.transform.position.y : transform.position.y;
-            var z = trackZAxis ? Camera.main.transform.position.z : transform.position.z;
+            var x = trackXAxis ? target.position.x : transform.position.x;
+            var y = trackYAxis ? target.position.y : transform.position.y;
+            var z = trackZAxis ? target.position.z : transform.position.z;
             transform.LookAt(new Vector3(x, y, z));
+            
+            transform.rotation = Quaternion.LookRotation(target.forward);
 
             // var direction = new Vector3(playerCamera.transform.position.x, transform.position.y, playerCamera.transform.position.z) - transform.position;
             // var rotation = Quaternion.LookRotation(direction);

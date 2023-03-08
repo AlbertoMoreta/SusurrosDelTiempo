@@ -159,7 +159,7 @@
             },
             {
                "characterName": "Borrachos",
-               "text":"Lo sé, con toda la gente que se está yendo a la ciudad Epifanio y los chicos no dan para más.",
+               "text":"Lo sé, con toda la gente que se está yendo a la ciudad, Epifanio y los chicos no dan para más.",
                "position": -1,
                "duration":5
             },
@@ -173,6 +173,7 @@
             {
                "characterName": "Borrachos",
                "text":"Hablando de Epifanio, hoy se le veía muy decaído cuando fue a trabajar, dudo que hasta cerrase la puerta de su casa.",
+               "hint":"Epifanio suele dejar la puerta de su casa abierta cuando va a trabajar.",
                "position": 1,
                "duration":7
             },

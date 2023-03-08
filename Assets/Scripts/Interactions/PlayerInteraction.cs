@@ -24,17 +24,25 @@ public class PlayerInteraction : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if(!_mouseMode){
-            if (Physics.Raycast(playerCamera.position, playerCamera.forward, out RaycastHit hit, distance, interactableLayers)) {
-                currentInteractable = hit.collider.GetComponent<Interactable>();
-                crosshair.sprite = activeCrosshair; 
-                if(currentInteractable != null){
+            if (Physics.Raycast(playerCamera.position, playerCamera.forward, out RaycastHit hit, distance)) {
+                var newInteractable = hit.collider.GetComponent<Interactable>();
+                if(newInteractable != null){
+                    currentInteractable = newInteractable;
+                    crosshair.sprite = activeCrosshair; 
                     currentInteractable.Hover();
+                } else {
+                    if(currentInteractable != null){
+                        currentInteractable.UnHover();
+                        currentInteractable = null;
+                    }
+                    crosshair.sprite = defaultCrosshair;
                 }
-            } else {
+            } 
+            else {
                 if(currentInteractable != null){
                     currentInteractable.UnHover();
+                    currentInteractable = null;
                 }
-                currentInteractable = null;
                 crosshair.sprite = defaultCrosshair;
             }
 
