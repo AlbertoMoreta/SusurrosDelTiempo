@@ -44,8 +44,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a55d5f259734fc4c8d0c817dc1a5468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hour: 1
+  hour: 5
   defaultTime: {fileID: 0}
   times:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

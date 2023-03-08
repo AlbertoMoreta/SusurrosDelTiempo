@@ -255,6 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3e1b9e0980f30747868e52d5c0e99a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
   trackXAxis: 1
   trackYAxis: 1
   trackZAxis: 1
