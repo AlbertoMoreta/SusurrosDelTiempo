@@ -28,14 +28,14 @@ public class PlayerInteraction : MonoBehaviour {
                 var newInteractable = hit.collider.GetComponent<Interactable>();
                 if(newInteractable != null){
                     currentInteractable = newInteractable;
-                    crosshair.sprite = activeCrosshair; 
+                    if(crosshair != null) { crosshair.sprite = activeCrosshair; }
                     currentInteractable.Hover();
                 } else {
                     if(currentInteractable != null){
                         currentInteractable.UnHover();
                         currentInteractable = null;
                     }
-                    crosshair.sprite = defaultCrosshair;
+                    if(crosshair != null) { crosshair.sprite = defaultCrosshair; }
                 }
             } 
             else {
@@ -43,7 +43,7 @@ public class PlayerInteraction : MonoBehaviour {
                     currentInteractable.UnHover();
                     currentInteractable = null;
                 }
-                crosshair.sprite = defaultCrosshair;
+                if(crosshair != null) { crosshair.sprite = defaultCrosshair; }
             }
 
             if (Input.GetMouseButtonDown(0)) {
