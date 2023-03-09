@@ -12,10 +12,14 @@ public class TimeTravelManager : MonoBehaviour {
     private int _currentHour;    
     private GameObject _currentTime;
 
-    private GameObject _sun;
-    private bool _sunRotation = false;
+    private GameObject _sky;
+    private GameObject _stars;
+    private bool _skyRotation = false;
     private float desiredDuration = 3f;
     private float elapsedTime;
+
+    private int[] _dayHours = {7,8,9,10,11,12,13,14,15,16,17,18};
+    private int[] _nightHours = {19,20,21,22,23,24,0,1,2,3,4,5,6};
 
     public static TimeTravelManager Instance {
         get; private set;
@@ -32,7 +36,8 @@ public class TimeTravelManager : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        _sun = GameObject.Find("Sky");
+        _sky = GameObject.Find("Sky");
+        _stars = _sky.transform.Find("Stars").gameObject;
         _currentTime = defaultTime;
         hour = _currentHour;
     }
@@ -42,10 +47,10 @@ public class TimeTravelManager : MonoBehaviour {
         if(hour != _currentHour){
             TimeTravel(hour);
             elapsedTime = 0;
-            _sunRotation = true;
+            _skyRotation = true;
         }
 
-        if (_sunRotation){
+        if (_skyRotation){
             RotateSun(hour);
         }
     }
@@ -68,15 +73,41 @@ public class TimeTravelManager : MonoBehaviour {
 
         _currentTime = time;
         _currentHour = hour;
+
+        if (_dayHours.Contains(_currentHour)){ SwitchToDay(); }
+        if (_nightHours.Contains(_currentHour)){ SwitchToNight(); }
+
+        if(_currentHour == 12){ 
+            SoundEffectManager.Instance.PlayClip("campanas"); 
+        }else {
+            SoundEffectManager.Instance.StopClip("campanas"); 
+        }
     }
 
     private void RotateSun(int hour){
         elapsedTime += Time.deltaTime;
         float percentageComplete = elapsedTime / desiredDuration;
         var endRotation = Quaternion.Euler((hour - 6) * 15 ,0,0);
-        _sun.transform.rotation = Quaternion.Lerp(_sun.transform.rotation, endRotation, percentageComplete);
-        if(_sun.transform.rotation == endRotation) {
-            _sunRotation = false;
+        _sky.transform.rotation = Quaternion.Lerp(_sky.transform.rotation, endRotation, percentageComplete);
+        if(_sky.transform.rotation == endRotation) {
+            _skyRotation = false;
         }
+    }
+
+    
+    private void SwitchToDay() {
+        if(_stars != null) {
+            _stars.SetActive(false);
+        }
+        SoundEffectManager.Instance.StopClip("grillos");
+        SoundEffectManager.Instance.PlayClip("pájaros");
+    }
+
+    private void SwitchToNight() {
+        if(_stars != null) {
+            _stars.SetActive(true);
+        }
+        SoundEffectManager.Instance.PlayClip("grillos");
+        SoundEffectManager.Instance.StopClip("pájaros");
     }
 }
