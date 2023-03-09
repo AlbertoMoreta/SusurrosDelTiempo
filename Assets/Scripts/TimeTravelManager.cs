@@ -13,7 +13,8 @@ public class TimeTravelManager : MonoBehaviour {
     private GameObject _currentTime;
 
     private GameObject _sky;
-    private GameObject _stars;
+    private Transform _stars;
+    private GameObject _lamps;
     private bool _skyRotation = false;
     private float desiredDuration = 3f;
     private float elapsedTime;
@@ -37,7 +38,8 @@ public class TimeTravelManager : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         _sky = GameObject.Find("Sky");
-        _stars = _sky.transform.Find("Stars").gameObject;
+        _stars = _sky.transform.Find("Stars");
+        _lamps = GameObject.Find("LampLights");
         _currentTime = defaultTime;
         hour = _currentHour;
     }
@@ -97,16 +99,24 @@ public class TimeTravelManager : MonoBehaviour {
     
     private void SwitchToDay() {
         if(_stars != null) {
-            _stars.SetActive(false);
+            _stars.gameObject.SetActive(false);
         }
+        if(_lamps != null) {
+            _lamps.SetActive(false);
+        }
+        
         SoundEffectManager.Instance.StopClip("grillos");
         SoundEffectManager.Instance.PlayClip("pájaros");
     }
 
     private void SwitchToNight() {
         if(_stars != null) {
-            _stars.SetActive(true);
+            _stars.gameObject.SetActive(true);
         }
+        if(_lamps != null) {
+            _lamps.SetActive(true);
+        }
+        
         SoundEffectManager.Instance.PlayClip("grillos");
         SoundEffectManager.Instance.StopClip("pájaros");
     }

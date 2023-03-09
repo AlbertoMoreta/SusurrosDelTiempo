@@ -33,6 +33,7 @@ public class UIManager : MonoBehaviour {
             }
             _isDiaryDisplaying = !_isDiaryDisplaying;
         }
+        CheckCursorVisibility();
     }
 
 
@@ -52,6 +53,18 @@ public class UIManager : MonoBehaviour {
 
     public static void Hide<T>(bool remember = true) where T : View {
         GetView<T>().Hide();
+    }
+
+    private void CheckCursorVisibility(){
+        var clockView = UIManager.GetView<ClockView>();
+        var noteView = UIManager.GetView<NoteView>();
+
+        if((clockView != null && clockView.isActiveAndEnabled) ||
+        (noteView != null && noteView.isActiveAndEnabled)) {
+            Cursor.visible = true;
+        }else{
+            Cursor.visible = false;
+        }
     }
 
 }
