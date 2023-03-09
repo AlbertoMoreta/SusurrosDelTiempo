@@ -56,7 +56,7 @@ public class CutScenePlayer : MonoBehaviour
         IEnumerator WaitForMessage()
         {
             yield return new WaitForSeconds(10f);// Wait a bit
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
         StartCoroutine(WaitForMessage());
     }

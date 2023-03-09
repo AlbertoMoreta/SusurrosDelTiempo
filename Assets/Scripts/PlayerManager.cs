@@ -18,6 +18,12 @@ public class PlayerManager : MonoBehaviour {
         Instance = this;
     }
 
+    public void Update() {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            Application.Quit();
+        }
+    }
+
     public void SetFirstPersonModeActive(bool active) {
         GetMovementComponent().SetCanMove(active);
         GetCameraMovementComponent().SetCanMove(active);

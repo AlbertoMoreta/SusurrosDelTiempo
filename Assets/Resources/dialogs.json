@@ -172,10 +172,16 @@
             },
             {
                "characterName": "Borrachos",
-               "text":"Hablando de Epifanio, hoy se le veía muy decaído cuando fue a trabajar, dudo que hasta cerrase la puerta de su casa.",
+               "text":"Hablando de Epifanio, hoy se le veía muy decaído cuando fue a trabajar",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Borrachos",
+               "text":"dudo que hasta cerrase la puerta de su casa.",
                "hint":"Epifanio suele dejar la puerta de su casa abierta cuando va a trabajar.",
                "position": 1,
-               "duration":7
+               "duration":4
             },
             {
                "characterName": "Borrachos",
@@ -200,6 +206,31 @@
                "text":"Deberíamos pedirnos otra, ¡Fermín otra ronda!",
                "position": -1,
                "duration":6
+            },
+            {
+               "characterName": "Borrachos",
+               "text":"Vaale, me tomo la antepenúltima... Pero no muchas más",
+               "position": -1,
+               "duration":5
+            },
+            {
+               "characterName": "Borrachos",
+               "text":"Que a eso de las 18:00 me tengo que ir a casa.",
+               "position": -1,
+               "duration": 3
+            },
+            {
+               "characterName": "Borrachos",
+               "text":"Bueno no, espera. Que es que a esas horas está la guardia civil patrullando",
+               "hint": "A las 18:00 suele estar la guardia civil patrullando por el pueblo",
+               "position": -1,
+               "duration": 4
+            },
+            {
+               "characterName": "Borrachos",
+               "text":"Y bueno, prefiero que no me den el coñazo",
+               "position": -1,
+               "duration": 5
             }
          ]
       },
@@ -615,7 +646,7 @@
          "subtitles":[
             {
                "characterName": "Gato",
-               "text":"¡Abajo el capitalismo!",
+               "text":"A esta hora no hay nada que ver por aquí.",
                "position": 1,
                "duration":3
             }

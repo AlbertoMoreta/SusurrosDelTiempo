@@ -12,7 +12,7 @@ public class DialogTrigger : MonoBehaviour {
         _collider = gameObject.GetComponent<SphereCollider>();
     }
 
-    private void OnTriggerStay(Collider other) {
+    private void OnTriggerEnter(Collider other) {
         if(other.tag.Equals("Player") && dialogKey != null) {
             DialogManager.Instance.StartDialog(dialogKey);
         }
