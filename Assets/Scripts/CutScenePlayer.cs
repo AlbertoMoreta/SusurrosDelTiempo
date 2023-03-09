@@ -10,21 +10,21 @@ public class CutScenePlayer : MonoBehaviour
     public GameObject blackout;
     public GameObject message;
 
+    public LevelLoader LevelLoader;
+
     // Start is called before the first frame update
     void Awake()
     {
         IEnumerator StartSecondDialog()
         {
             yield return new WaitForSeconds(30);// Wait a bit
-            cabo1.active = false;
-            cabo2.active = true;
+            cabo1.SetActive(false);
+            cabo2.SetActive(true);
             ShowSecondDialog();
         }
+        //GameObject.Find("DialogTrigger").SetActive(true);
         StartCoroutine(StartSecondDialog());
     }
-
-    // Update is called once per frame
-    
 
     private void ShowSecondDialog()
     {
@@ -41,7 +41,7 @@ public class CutScenePlayer : MonoBehaviour
 
     void Blackout()
     {
-        blackout.active = true;
+        blackout.SetActive(true);
         IEnumerator WaitForMessage()
         {
             yield return new WaitForSeconds(3.2f);// Wait a bit
@@ -52,11 +52,11 @@ public class CutScenePlayer : MonoBehaviour
 
     void showMessageAndEnd()
     {
-        message.active = true;
+        message.SetActive(true);
         IEnumerator WaitForMessage()
         {
             yield return new WaitForSeconds(10f);// Wait a bit
-            SceneManager.LoadScene(3);
+            LevelLoader.FadeAndLoadScene("Credits");
         }
         StartCoroutine(WaitForMessage());
     }

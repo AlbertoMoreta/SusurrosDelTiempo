@@ -4,11 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
+
+    public LevelLoader LevelLoader;
+
     public void OnClickPlay() {
-        SceneManager.LoadScene(1);
+        LevelLoader.FadeAndLoadScene("Gameplay");
     }
 
     public void OnClickExit() {
-        Application.Quit();
+        LevelLoader.FadeAnExit();
     }
 }

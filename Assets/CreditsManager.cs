@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class GoToFinalCutscene : MonoBehaviour
+public class CreditsManager : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,13 +14,5 @@ public class GoToFinalCutscene : MonoBehaviour
     void Update()
     {
         
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag.Equals("Player"))
-        {
-            SceneManager.LoadScene(2);
-        }
     }
 }

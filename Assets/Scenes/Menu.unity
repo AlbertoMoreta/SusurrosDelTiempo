@@ -666,6 +666,67 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.020000001, y: 0.019999998, z: 0.014938778}
   m_Center: {x: 0.000000029802322, y: 4.6254663e-17, z: -0.006509764}
+--- !u!1001 &177579261
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7263053829790111852, guid: 1772768d44c1b7549916592d9c42618f, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263053829790111852, guid: 1772768d44c1b7549916592d9c42618f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263053829790111852, guid: 1772768d44c1b7549916592d9c42618f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263053829790111852, guid: 1772768d44c1b7549916592d9c42618f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263053829790111852, guid: 1772768d44c1b7549916592d9c42618f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263053829790111852, guid: 1772768d44c1b7549916592d9c42618f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263053829790111852, guid: 1772768d44c1b7549916592d9c42618f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263053829790111852, guid: 1772768d44c1b7549916592d9c42618f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263053829790111852, guid: 1772768d44c1b7549916592d9c42618f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263053829790111852, guid: 1772768d44c1b7549916592d9c42618f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263053829790111852, guid: 1772768d44c1b7549916592d9c42618f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263053829790111853, guid: 1772768d44c1b7549916592d9c42618f, type: 3}
+      propertyPath: isMainMenu
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263053829790111854, guid: 1772768d44c1b7549916592d9c42618f, type: 3}
+      propertyPath: m_Name
+      value: LevelLoader
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1772768d44c1b7549916592d9c42618f, type: 3}
 --- !u!4 &198110593 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8661443008626654, guid: 72a8abc9dfdd0f245bdf88f5ab76b55f, type: 3}
@@ -1953,6 +2014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c987f90d08ccd9b4c8d09c4d95bf1cd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LevelLoader: {fileID: 0}
 --- !u!65 &480336281
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5927,6 +5989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e14862758b4d94dae608f51f8d6128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LevelLoader: {fileID: 2139197328}
 --- !u!4 &1773822487 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4393043832602188672, guid: 1f391f6ca0457ea44b8b0180263abd9e, type: 3}
@@ -7077,6 +7140,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5242081380028265419, guid: 339ae4e8cb8f48f4f9e41d439b01a3b0, type: 3}
   m_PrefabInstance: {fileID: 708217712908280491}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2139197328 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7263053829790111853, guid: 1772768d44c1b7549916592d9c42618f, type: 3}
+  m_PrefabInstance: {fileID: 177579261}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8b7abc9cade3d74787e642556019f7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2141065405
 PrefabInstance:
   m_ObjectHideFlags: 0

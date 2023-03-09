@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour {
 
     public GameObject player;
+    public LevelLoader LevelLoader;
 
     public static PlayerManager Instance {
         get; private set;
@@ -18,11 +19,6 @@ public class PlayerManager : MonoBehaviour {
         Instance = this;
     }
 
-    public void Update() {
-        if (Input.GetKeyDown(KeyCode.Escape)) {
-            Application.Quit();
-        }
-    }
 
     public void SetFirstPersonModeActive(bool active) {
         GetMovementComponent().SetCanMove(active);
