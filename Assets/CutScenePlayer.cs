@@ -10,52 +10,43 @@ public class CutScenePlayer : MonoBehaviour
     public GameObject blackout;
     public GameObject message;
 
-    // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
-        IEnumerator StartSecondDialog()
-        {
-            yield return new WaitForSeconds(30);// Wait a bit
-            cabo1.active = false;
-            cabo2.active = true;
-            ShowSecondDialog();
-        }
+        Debug.Log("start");
+        Cursor.visible = false;
+        StartCoroutine(StartFirstDialog());
         StartCoroutine(StartSecondDialog());
+        StartCoroutine(Blackout());
     }
 
-    // Update is called once per frame
-    
+    IEnumerator StartFirstDialog() {
+        yield return new WaitForSeconds(0.5f);
+        cabo1.SetActive(true);
+        cabo2.SetActive(false);
+        DialogManager.Instance.StartDialog("1_Final_GC_y_falangista");
+    }
 
-    private void ShowSecondDialog()
-    {
+    IEnumerator StartSecondDialog() {
+        yield return new WaitForSeconds(32f);
+        cabo1.SetActive(false);
+        cabo2.SetActive(true);
         DialogManager.Instance.StartDialog("2_Final_GC_y_falangista");
-        IEnumerator WaitForBlackout()
-        {
-            yield return new WaitForSeconds(9.2f);// Wait a bit
-            Blackout();
-        }
-        StartCoroutine(WaitForBlackout());
-
     }
 
 
-    void Blackout()
-    {
-        blackout.active = true;
-        IEnumerator WaitForMessage()
-        {
-            yield return new WaitForSeconds(3.2f);// Wait a bit
-            showMessageAndEnd();
-        }
-        StartCoroutine(WaitForMessage());
+    IEnumerator Blackout() {
+        yield return new WaitForSeconds(43f);
+        blackout.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        showMessageAndEnd();
     }
 
     void showMessageAndEnd()
     {
-        message.active = true;
+        message.SetActive(true);
         IEnumerator WaitForMessage()
         {
-            yield return new WaitForSeconds(10f);// Wait a bit
+            yield return new WaitForSeconds(30f);// Wait a bit
             SceneManager.LoadScene(3);
         }
         StartCoroutine(WaitForMessage());
