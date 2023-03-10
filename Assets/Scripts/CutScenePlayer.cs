@@ -36,7 +36,7 @@ public class CutScenePlayer : MonoBehaviour
 
 
     IEnumerator Blackout() {
-        yield return new WaitForSeconds(43f);
+        yield return new WaitForSeconds(42f);
         blackout.SetActive(true);
         yield return new WaitForSeconds(3f);
         showMessageAndEnd();
@@ -47,8 +47,8 @@ public class CutScenePlayer : MonoBehaviour
         message.SetActive(true);
         IEnumerator WaitForMessage()
         {
-            yield return new WaitForSeconds(30f);// Wait a bit
-            SceneManager.LoadScene(3);
+            yield return new WaitForSeconds(35f);// Wait a bit
+            LevelLoader.FadeAndLoadScene("Credits");
         }
         StartCoroutine(WaitForMessage());
     }
