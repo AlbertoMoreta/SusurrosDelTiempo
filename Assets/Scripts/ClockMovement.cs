@@ -98,7 +98,6 @@ public class ClockMovement : MonoBehaviour {
     }
 
     void OnTriggerEnter(Collider other) {
-        Debug.Log("Trigger");
         if(other.tag.Equals("MidnightTrigger")) {  
             if(timeFormat == MIDNIGHT_ENUM.PM) {
                 timeFormat = MIDNIGHT_ENUM.AM;

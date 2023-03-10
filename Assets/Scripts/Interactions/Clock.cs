@@ -46,12 +46,10 @@ public class Clock : MonoBehaviour, Interactable {
     }
 
     public void Hover() {
-        Debug.Log("HOVER");
         _renderer.material.EnableKeyword("_EMISSION");
     }
 
     public void UnHover() {
-        Debug.Log("UNHOVER");
         _renderer.material.DisableKeyword("_EMISSION");
     }
 

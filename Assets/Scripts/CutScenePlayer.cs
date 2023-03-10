@@ -8,46 +8,38 @@ public class CutScenePlayer : MonoBehaviour
     public GameObject cabo1;
     public GameObject cabo2;
     public GameObject blackout;
+    public LevelLoader LevelLoader;
     public GameObject message;
 
-    public LevelLoader LevelLoader;
-
-    // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
-        IEnumerator StartSecondDialog()
-        {
-            yield return new WaitForSeconds(30);// Wait a bit
-            cabo1.SetActive(false);
-            cabo2.SetActive(true);
-            ShowSecondDialog();
-        }
-        //GameObject.Find("DialogTrigger").SetActive(true);
+        Debug.Log("start");
+        Cursor.visible = false;
+        StartCoroutine(StartFirstDialog());
         StartCoroutine(StartSecondDialog());
+        StartCoroutine(Blackout());
     }
 
-    private void ShowSecondDialog()
-    {
+    IEnumerator StartFirstDialog() {
+        yield return new WaitForSeconds(0.5f);
+        cabo1.SetActive(true);
+        cabo2.SetActive(false);
+        DialogManager.Instance.StartDialog("1_Final_GC_y_falangista");
+    }
+
+    IEnumerator StartSecondDialog() {
+        yield return new WaitForSeconds(32f);
+        cabo1.SetActive(false);
+        cabo2.SetActive(true);
         DialogManager.Instance.StartDialog("2_Final_GC_y_falangista");
-        IEnumerator WaitForBlackout()
-        {
-            yield return new WaitForSeconds(9.2f);// Wait a bit
-            Blackout();
-        }
-        StartCoroutine(WaitForBlackout());
-
     }
 
 
-    void Blackout()
-    {
+    IEnumerator Blackout() {
+        yield return new WaitForSeconds(43f);
         blackout.SetActive(true);
-        IEnumerator WaitForMessage()
-        {
-            yield return new WaitForSeconds(3.2f);// Wait a bit
-            showMessageAndEnd();
-        }
-        StartCoroutine(WaitForMessage());
+        yield return new WaitForSeconds(3f);
+        showMessageAndEnd();
     }
 
     void showMessageAndEnd()
@@ -55,8 +47,8 @@ public class CutScenePlayer : MonoBehaviour
         message.SetActive(true);
         IEnumerator WaitForMessage()
         {
-            yield return new WaitForSeconds(10f);// Wait a bit
-            LevelLoader.FadeAndLoadScene("Credits");
+            yield return new WaitForSeconds(30f);// Wait a bit
+            SceneManager.LoadScene(3);
         }
         StartCoroutine(WaitForMessage());
     }
