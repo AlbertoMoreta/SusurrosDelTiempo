@@ -8174,6 +8174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DiaryView
       objectReference: {fileID: 0}
+    - target: {fileID: 5590140343498477649, guid: 864483c5d588e7047a93cc5fada82819, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 864483c5d588e7047a93cc5fada82819, type: 3}
 --- !u!4 &2061505506 stripped

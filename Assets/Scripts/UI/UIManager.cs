@@ -26,7 +26,7 @@ public class UIManager : MonoBehaviour {
 
     private void Update() {
         if (Input.GetKeyDown(KeyCode.E)) {
-            if(_isDiaryDisplaying) {
+            if(!_isDiaryDisplaying) {
                 UIManager.Show<DiaryView>();
             } else {
                 UIManager.Hide<DiaryView>();
@@ -59,7 +59,7 @@ public class UIManager : MonoBehaviour {
         var clockView = UIManager.GetView<ClockView>();
         var noteView = UIManager.GetView<NoteView>();
 
-        if((clockView != null && clockView.isActiveAndEnabled) ||
+        if((clockView == null) || (clockView.isActiveAndEnabled) ||
         (noteView != null && noteView.isActiveAndEnabled)) {
             Cursor.visible = true;
         }else{
