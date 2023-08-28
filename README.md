@@ -2,7 +2,7 @@
 
 ![Portada de Susurros del Tiempo](https://img.itch.zone/aW1nLzExNTI5ODQ5LmpwZw==/original/tprPeV.jpg)
 
-> Juego desarrollado para la TFGJ (The Final Game Jam), durante la primera semana de marzo de 2023. 
+> Juego desarrollado para la [TFG JAM 2023](https://itch.io/jam/tfg-jam), durante la primera semana de marzo de 2023. 
 >
 > El tema elegido fue "el tiempo todo lo cambia".
 
